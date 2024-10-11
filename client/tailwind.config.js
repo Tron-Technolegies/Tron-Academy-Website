@@ -6,6 +6,7 @@ export default {
       colors: {
         primary: "#A23CC6",
         hoverPrimary: "#CA90F2",
+        lightPrimary: "#F4E3FA",
       },
       keyframes: {
         slideInLeft: {

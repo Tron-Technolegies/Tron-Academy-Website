@@ -23,6 +23,18 @@
 body {
   font-family: "Poppins", sans-serif;
 }
+.roboto-font {
+  font-family: "Roboto", sans-serif;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+}
+.comic-font {
+  font-family: "Comic Sans MS", cursive;
+}
+.source-font {
+  font-family: "Source Sans 3", sans-serif;
+}
 
 .hover-animation {
   transition: 0.3s ease-in-out all;
@@ -35,15 +47,4 @@ body {
 
 .hover-navlink {
   @apply hover:mt-2 hover:text-hoverPrimary;
-}
-.insta {
-  background: linear-gradient(
-    0deg,
-    #e09b3d 0.29%,
-    #c74c4d 29.97%,
-    #c21975 59.65%,
-    #7024c4 99.22%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
