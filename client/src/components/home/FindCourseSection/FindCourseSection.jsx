@@ -9,9 +9,16 @@ export default function FindCourseSection() {
   return (
     <div className="px-[120px] py-10 bg-gradient-to-tl from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center my-10">
-        <h4 className="roboto-font text-4xl font-black">
-          Find Your Favourite Course
-        </h4>
+        <div className="relative">
+          <h4 className="roboto-font text-4xl font-black">
+            Find Your Favourite Course
+          </h4>
+          <img
+            src="/courseArrow.png"
+            className="absolute top-1 -right-24"
+          ></img>
+        </div>
+
         <div className="flex gap-1 items-center">
           <input
             type="text"

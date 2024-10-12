@@ -6,7 +6,7 @@ export default function WhyDetailElt({ title, content }) {
       <h4 className="roboto-font text-3xl font-bold text-hoverPrimary">
         {title}
       </h4>
-      <p>{content}</p>
+      <p className="inter-font text-justify">{content}</p>
     </div>
   );
 }

@@ -8,7 +8,7 @@ export default function WhySection() {
         <h4 className="roboto-font text-4xl font-black">
           <span className="text-hoverPrimary">Why</span> Tron Academy
         </h4>
-        <p className="text-[#5E5E5E] font-normal text-base leading-[22px] max-w-[524px]">
+        <p className="text-[#5E5E5E] roboto-font font-normal text-base leading-[22px] max-w-[524px]">
           At Tron Academy, we focus on providing personalized, practical, and
           results-driven learning experiences. Here’s why you should choose us:
         </p>
@@ -17,15 +17,15 @@ export default function WhySection() {
       <div className="flex justify-around items-center my-14">
         <div className="flex flex-col gap-10">
           <WhyDetailElt
-            title={"Personalized learning"}
+            title={"Portfolio Building"}
             content={
-              "Learn at your own pace with methods tailored to your learning style. Every student receives individual attention to maximize their potential."
+              "At Tron Academy, we help you achieve that. You’ll leave with not just    a certificate but a portfolio that shows exactly where your strength lies."
             }
           />
           <WhyDetailElt
-            title={"Certified Courses"}
+            title={"Learn from Experts"}
             content={
-              "Receive certificates from internationally recognized bodies such as Google, SEMrush, and HubSpot Academy. These certificates will validate your skills and boost your employability."
+              "At TRON Academy, you don’t just learn; you’re mentored by the best industry leaders who’ve made their mark. With insights from our instructors, you’ll gain the edge you need."
             }
           />
         </div>
@@ -35,13 +35,13 @@ export default function WhySection() {
           <WhyDetailElt
             title={"100% Job Support"}
             content={
-              "We offer complete job placement assistance, from interview preparation to resume-building. Our strong industry connections ensure you get the support you need to succeed."
+              "We guarantee placement in our coding and digital marketing programs, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success."
             }
           />
           <WhyDetailElt
             title={"Hands-on Projects"}
             content={
-              "Gain real-world experience through live projects under the guidance of industry experts. Your practical skills will give you an edge in the job market."
+              "You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting to prepare you for industry challenges."
             }
           />
         </div>
