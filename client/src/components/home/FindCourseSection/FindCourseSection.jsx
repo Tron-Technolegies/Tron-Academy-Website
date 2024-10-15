@@ -19,13 +19,13 @@ export default function FindCourseSection() {
           ></img>
         </div>
 
-        <div className="flex gap-1 items-center">
+        <div className="flex gap-1 items-center w-full justify-center">
           <input
             type="text"
             placeholder="search your course.."
-            className="bg-[#f0ebeb] px-4 py-3 rounded-lg"
+            className="bg-[#f7f4f4] px-4 py-3 rounded-lg w-1/3"
           ></input>
-          <button className="text-3xl p-2 bg-[#f0ebeb] rounded-lg">
+          <button className="text-3xl p-2 bg-[#f7f4f4] rounded-lg">
             <IoIosSearch />
           </button>
         </div>

@@ -6,15 +6,14 @@ export default function LandingSection() {
     <div className="px-[120px] py-10 flex justify-between items-center bg-gradient-to-br from-[#F4E3FA] from-5% ...">
       <div className="flex flex-col gap-5">
         <h1 className="text-5xl text-primary leading-[70px] comic-font font-bold">
-          UNLOCK YOUR POTENTIAL WITH{" "}
-          <span className="bg-[#FDCCFB] px-1">TRON ACADEMY</span>
+          OWN YOUR PATH AND DEFINE{" "}
+          <span className="bg-[#FDCCFB] px-1">SUCCESS</span>
         </h1>
-        <p className="text-[#5E5E5E] text-2xl roboto-font">
-          Master the skills you need to thrive in the digital world.
+        <p className="text-[#5E5E5E] text-base max-w-[500px] text-justify roboto-font">
+          Change your life in just few months... if you're ready to Focus on
+          mastering the right skills with the best guidance at TRON Academy
         </p>
-        <p className="text-[#5E5E5E] text-2xl roboto-font font-bold max-w-[335px]">
-          UNLOCK YOUR FUTURE WITH TRON ACADEMY!
-        </p>
+
         <div className="flex gap-5 items-center">
           <button className="flex gap-2 items-center bg-black hover:bg-hoverPrimary hover-animation w-fit h-fit text-white p-4 rounded-lg">
             <span className="text-sm">Enroll Now</span>
