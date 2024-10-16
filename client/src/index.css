@@ -36,6 +36,32 @@ body {
   font-family: "Source Sans 3", sans-serif;
 }
 
+.form {
+  width: 90vw;
+  @apply max-w-xl bg-white rounded shadow-lg py-8 px-10 my-12 mx-auto;
+}
+.form-label {
+  @apply block text-sm mb-3 capitalize leading-normal;
+}
+.form-input,
+.form-textarea,
+.form-select {
+  @apply w-full py-1 px-3 rounded-lg  border border-gray-300 text-gray-900 h-11;
+}
+.form-input,
+.form-select,
+.form-btn {
+  @apply h-11;
+}
+.form-row {
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.form-textarea {
+  height: 7rem;
+}
+
 .hover-animation {
   transition: 0.3s ease-in-out all;
 }
@@ -47,4 +73,26 @@ body {
 
 .hover-navlink {
   @apply hover:mt-2 hover:text-hoverPrimary;
+}
+
+.review-bg {
+  background: rgba(26, 26, 26, 0.9);
+  backdrop-filter: blur(250px);
+}
+.review-card {
+  background: rgba(255, 255, 255, 0.03);
+}
+.review-header {
+  background: linear-gradient(
+    90.07deg,
+    #582ffb 3.3%,
+    #ff4dcd 57.06%,
+    #fc974e 106.51%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.get-in-touch-bg {
+  background: linear-gradient(180deg, #f4e3fb 0%, #fdf8ff 100%);
 }

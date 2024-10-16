@@ -9,6 +9,9 @@ import PlacementSection from "../../components/home/placements/PlacementSection"
 import SisterSection from "../../components/home/sisters/SisterSection";
 import CompanySection from "../../components/home/companies/CompanySection";
 import CelebrationSection from "../../components/home/celebrations/CelebrationSection";
+import ReviewSection from "../../components/home/review/ReviewSection";
+import GetInTouchSection from "../../components/home/getInTouch/GetInTouchSection";
+import FaqSection from "../../components/home/faq/FaqSection";
 
 export default function HomePage() {
   return (
@@ -23,6 +26,9 @@ export default function HomePage() {
       <SisterSection />
       <CompanySection />
       <CelebrationSection />
+      <ReviewSection />
+      <GetInTouchSection />
+      <FaqSection />
     </div>
   );
 }
