@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LandingSection from "../../components/home/Landing/LandingSection";
 import FindCourseSection from "../../components/home/FindCourseSection/FindCourseSection";
 import WhySection from "../../components/home/whySection/WhySection";
@@ -14,6 +14,9 @@ import GetInTouchSection from "../../components/home/getInTouch/GetInTouchSectio
 import FaqSection from "../../components/home/faq/FaqSection";
 
 export default function HomePage() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
       <LandingSection />

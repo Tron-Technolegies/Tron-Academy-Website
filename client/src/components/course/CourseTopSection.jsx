@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import CourseDescription from "./CourseDescription";
-import { coding, digitalMarketing, multiMedia } from "../../utils/course";
+
+import CourseCard from "./CourseCard";
+import {
+  coding,
+  codingCourses,
+  digitalCourses,
+  digitalMarketing,
+  multiMedia,
+  multimediaCourses,
+} from "../../utils/course";
 
 const buttonNames = ["Digital Marketing", "Coding", "Multimedia"];
 
@@ -51,21 +60,39 @@ export default function CourseTopSection() {
           />
         )}
       </div>
-      <div className="flex items-center gap-10 justify-center my-10">
-        {buttonNames.map((x, index) => (
-          <button
-            className={`px-4 py-2 flex gap-3 items-center rounded-lg ${
-              active === x ? "bg-[#B277F3] text-white" : "bg-[#FAEFFF]"
-            }`}
-            onClick={() => setActive(x)}
-            key={index}
-          >
-            {x?.toUpperCase()}
-            <span>{active === x ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
-          </button>
-        ))}
+      <div className="max-w-[900px] mx-auto">
+        <div className="flex items-center gap-10 justify-center my-10">
+          {buttonNames.map((x, index) => (
+            <button
+              className={`px-4 py-2 flex gap-3 w-[280px] justify-center items-center inter-font font-semibold rounded-lg hover:bg-[#B277F3] hover:text-white hover-animation shadow-md ${
+                active === x ? "bg-[#B277F3] text-white" : "bg-[#FAEFFF]"
+              }`}
+              onClick={() => setActive(x)}
+              key={index}
+            >
+              {x?.toUpperCase()}
+              <span>
+                {active === x ? <IoIosArrowUp /> : <IoIosArrowDown />}
+              </span>
+            </button>
+          ))}
+        </div>
+        <div className="grid grid-cols-3 gap-10 justify-items-center">
+          {active === "Digital Marketing" &&
+            digitalCourses.map((x) => (
+              <CourseCard key={x.id} name={x.name} months={x.months} />
+            ))}
+          {active === "Coding" &&
+            codingCourses.map((x) => (
+              <CourseCard key={x.id} name={x.name} months={x.months} />
+            ))}
+          {active === "Multimedia" &&
+            multimediaCourses.map((x) => (
+              <CourseCard key={x.id} name={x.name} months={x.months} />
+            ))}
+        </div>
       </div>
-      <div>{active === ""}</div>
+      <img src="/course/icon-3.png" className="w-[116px] h-[58px]"></img>
     </div>
   );
 }

@@ -33,7 +33,7 @@ export default {
         slideInTop: "slideInTop 0.3s ease-out forwards",
       },
       dropShadow: {
-        navlink: "5px 5px 2px rgba(202, 144, 242, 0.5)",
+        navlink: "0px 0px 2px rgba(202, 144, 242, 0.5)",
       },
     },
   },

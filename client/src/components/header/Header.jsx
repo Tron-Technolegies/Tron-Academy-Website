@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
     <header className="px-[120px] h-[100px] shadow-sm py-10 flex justify-between items-center">
-      <div className="flex gap-3 items-center">
+      <Link to={"/"} className="flex gap-3 items-center">
         <img src="/logo.png" className="w-[52px] h-[63px]"></img>
         <img src="/logotext.png" className="w-[86px] h-[39px]"></img>
-      </div>
+      </Link>
       <div className="flex gap-5 items-center text-xl">
         <NavLink
           to={"/"}

@@ -1,7 +1,7 @@
 export const digitalMarketing = {
   title: "Life Set",
   img: "/course/red-pill.png",
-  imgTitle: "The Red Pill",
+  imgTitle: `Red`,
   desc: "Take the RED PILL with our Life Set Digital Marketing Course at Tron Academy and awaken to your true potential. We don’t just claim to be the best; we prove it with unparalleled training and elite instructors who shape industry leaders. With a 100% job guarantee and a UAE-based work experience certificate, you won’t just enter the job market; you’ll own it. In just five months, you’ll master essential skills and specialise in high-demand areas like ;",
   points: [
     "Search Engine Optimisation",
@@ -16,7 +16,7 @@ export const digitalMarketing = {
 export const coding = {
   title: "Life Set",
   img: "/course/blue-pill.png",
-  imgTitle: "The Blue Pill",
+  imgTitle: "Blue",
   desc: "Take the blue pill with our LifeSet Coding Course at Tron Academy and awaken to your true potential. We don’t just claim to be the best; we prove it with unparalleled training and elite instructors who shape industry leaders. With a 100% job guarantee and a UAE-based work experience certificate, you won’t just enter the job market; you’ll own it. In just six months, you’ll master essential skills and specialize in high-demand areas like ;",
   points: [
     "Python-Django Full Stack Development",
@@ -29,7 +29,7 @@ export const coding = {
 export const multiMedia = {
   title: "Multimedia",
   img: "/course/purple-pill.png",
-  imgTitle: "The Purple Pill",
+  imgTitle: "Purple",
   desc: "Take the purple pill with our Multimedia Course at Tron Academy, where you don’t just settle for ordinary-you strive for excellence. We don’t waste your time with half-baked lessons; we specialise in making you an industry powerhouse. The best companies don’t settle for the average-they seek specialists who dominate their craft.That’s why we provide unparalleled placement assistance and a UAE-based work experience certificate that positions you above the competition.With cutting-edge training on the most powerful tools, you’ll emerge ready to excel in your chosen specialty. Tron Academy offers specialised courses in:",
   points: [
     "Graphic Design",

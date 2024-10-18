@@ -7,6 +7,7 @@ import CoursePage from "./pages/Course/CoursePage";
 import BlogPage from "./pages/blog/BlogPage";
 import TeamPage from "./pages/team/TeamPage";
 import AboutPage from "./pages/about/AboutPage";
+import SingleBlogPage from "./pages/blog/SingleBlogPage";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -23,6 +24,10 @@ export default function App() {
         {
           path: "blog",
           element: <BlogPage />,
+        },
+        {
+          path: "blog/:id",
+          element: <SingleBlogPage />,
         },
         {
           path: "team",
