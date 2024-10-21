@@ -7,7 +7,7 @@ import DetailCard from "./DetailCard";
 
 export default function FindCourseSection() {
   return (
-    <div className="px-[120px] py-10 bg-gradient-to-tl from-[#F4E3FA] from-5%">
+    <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center my-10">
         <div className="relative">
           <h4 className="roboto-font text-4xl font-black">
@@ -30,7 +30,7 @@ export default function FindCourseSection() {
           </button>
         </div>
       </div>
-      <div className="flex justify-around my-10 mt-20">
+      <div className="flex md:flex-row flex-col gap-5 md:justify-around items-center my-10 mt-20">
         <DetailCard icon={<FaUsers />} no={"1000+"} content={"Students"} />
         <DetailCard
           icon={<RiPresentationFill />}

@@ -5,7 +5,7 @@ import InstructorCard from "./InstructorCard";
 export default function InstructorsSection() {
   return (
     <div
-      className="px-[120px] py-20 flex justify-between items-center bg-no-repeat bg-left"
+      className="extra:px-[120px] extra:py-20 px-10 py-5 flex extra:flex-row flex-col-reverse gap-20 justify-between items-center extra:bg-no-repeat extra:bg-left bg-cover extra:bg-auto"
       style={{ backgroundImage: "url(/homeinstructorsbg.png)" }}
     >
       <div className="grid grid-cols-3 gap-x-2 gap-y-5">
@@ -40,7 +40,7 @@ export default function InstructorsSection() {
           position={"Flutter Developer"}
         />
       </div>
-      <div className="max-w-[365px] flex flex-col gap-3">
+      <div className="extra:max-w-[365px] flex flex-col items-center extra:items-start gap-3">
         <h4 className="text-4xl font-black roboto-font">
           <span className="text-hoverPrimary">Our</span> Instructors
         </h4>
@@ -48,7 +48,7 @@ export default function InstructorsSection() {
           At Tron Academy, we strive to bring together the best professors for
           the best courses
         </p>
-        <div className="flex gap-2 items-end">
+        <div className="flex extra:flex-row flex-col-reverse gap-2 items-end">
           <img src="/homeinstructorsArrow.png"></img>
           <button className="bg-black p-3 rounded-lg flex gap-2 items-center text-white hover:bg-hoverPrimary hover-animation">
             <span className="text-sm roboto-font">All Instructors</span>

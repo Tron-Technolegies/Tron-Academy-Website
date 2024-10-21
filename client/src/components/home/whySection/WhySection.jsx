@@ -3,7 +3,7 @@ import WhyDetailElt from "./WhyDetailElt";
 
 export default function WhySection() {
   return (
-    <div className="px-[120px] py-10 bg-gradient-to-tr from-[#F4E3FA] from-5%">
+    <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tr from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center text-center relative">
         <h4 className="roboto-font text-4xl font-black">
           <span className="text-hoverPrimary">Why</span> Tron Academy
@@ -14,8 +14,8 @@ export default function WhySection() {
         </p>
         <img src="/robot.png" className="absolute left-10"></img>
       </div>
-      <div className="flex justify-around items-center my-14">
-        <div className="flex flex-col gap-10">
+      <div className="flex lg:flex-row flex-col justify-around items-center my-14">
+        <div className="flex flex-col  gap-10">
           <WhyDetailElt
             title={"Portfolio Building"}
             content={
@@ -29,9 +29,9 @@ export default function WhySection() {
             }
           />
         </div>
-        <div className="border border-[#E671E5] border-dashed h-[200px]"></div>
+        <div className="border lg:block hidden border-[#E671E5] border-dashed h-[200px]"></div>
 
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-10 mt-10 lg:mt-0">
           <WhyDetailElt
             title={"100% Job Support"}
             content={

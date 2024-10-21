@@ -3,13 +3,13 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 export default function LandingSection() {
   return (
-    <div className="px-[120px] py-10 flex justify-between items-center bg-gradient-to-br from-[#F4E3FA] from-5% ...">
+    <div className="lg:px-[120px] lg:py-10 px-10 py-5 flex lg:flex-row flex-col gap-5 justify-between items-center bg-gradient-to-br from-[#F4E3FA] from-5% ...">
       <div className="flex flex-col gap-5">
-        <h1 className="text-5xl text-primary leading-[70px] comic-font font-bold">
+        <h1 className="lg:text-5xl text-4xl text-primary leading-[70px] comic-font font-bold">
           OWN YOUR PATH AND DEFINE{" "}
           <span className="bg-[#FDCCFB] px-1">SUCCESS</span>
         </h1>
-        <p className="text-[#5E5E5E] text-base max-w-[500px] text-justify roboto-font">
+        <p className="text-[#5E5E5E] text-sm lg:text-base max-w-[500px] text-justify roboto-font">
           Change your life in just few months... if you're ready to Focus on
           mastering the right skills with the best guidance at TRON Academy
         </p>

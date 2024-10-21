@@ -3,7 +3,7 @@ import PortfolioDetailCard from "./PortfolioDetailCard";
 
 export default function PortfolioSection() {
   return (
-    <div className="px-[120px] py-20 bg-gradient-to-tl from-[#F4E3FA] from-5% flex flex-col gap-10">
+    <div className="lg:px-[120px] lg:py-20 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5% flex flex-col gap-10">
       <div className="flex justify-between items-end">
         <div className="max-w-[810px] flex flex-col gap-5 inter-font">
           <h4 className="text-5xl font-semibold">

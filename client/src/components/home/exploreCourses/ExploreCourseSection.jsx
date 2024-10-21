@@ -4,8 +4,8 @@ import ExploreCourseCard from "./ExploreCourseCard";
 
 export default function ExploreCourseSection() {
   return (
-    <div className="px-[120px] py-10 bg-gradient-to-br from-[#F4E3FA] from-5% flex justify-between item-center pb-20">
-      <div className="max-w-[300px] flex flex-col justify-center gap-5">
+    <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-br from-[#F4E3FA] from-5% flex xl:flex-row flex-col justify-between item-center pb-20">
+      <div className="xl:max-w-[300px] flex flex-col items-center xl:items-start justify-center gap-5">
         <h4 className="text-4xl font-black roboto-font">
           <span className="text-hoverPrimary">Explore</span> Our Trending Course
         </h4>
@@ -16,10 +16,10 @@ export default function ExploreCourseSection() {
               <MdKeyboardArrowRight />
             </span>
           </button>
-          <img src="/exploreArrow.png"></img>
+          <img src="/exploreArrow.png" className="hidden xl:block"></img>
         </div>
       </div>
-      <div className="flex gap-3">
+      <div className="flex gap-3 justify-center xl:mt-0 mt-10">
         <ExploreCourseCard icon={"/digital.jpg"} name={"Digital Marketing"} />
         <ExploreCourseCard icon={"/coding.jpg"} name={"Coding"} />
         <ExploreCourseCard icon={"/multimedia.jpg"} name={"Multimedia"} />

@@ -6,19 +6,22 @@ export default function AboutHeader() {
       className="px-[120px] py-20 bg-center flex justify-between items-center relative"
       style={{ backgroundImage: `url('/about/about-bg.png')` }}
     >
-      <div className="flex flex-col gap-40 max-w-[500px]">
+      <div className="flex flex-col gap-40 max-w-[700px]">
         <div className="flex flex-col gap-5">
           <h3 className="roboto-font text-4xl font-black">
             <span className="text-[#B277F3]">About </span>Us
           </h3>
           <p className="inter-font text-lg">
-            Tron Academy sfjnvdjhbvdfhv ffvdb dcxbc xhvcxhcb xdhbcxc dvdfv
-            vfvxfvfvdfv
+            Tron Academy isn’t for everyone, only for the ambitious. If you want
+            to coast through theory, you’re in the wrong place. We deliver
+            real-world projects and an impressive portfolio that will make
+            employers take notice. The choice is yours: step up or get
+            overlooked. The clock is ticking.
           </p>
         </div>
         <div className="flex flex-col gap-5">
           <h4 className="roboto-font text-3xl font-semibold">
-            Impressive Stats and Achievements You Can Trust
+            You Want Success? We Make It Happen!
           </h4>
           <div className="text-[#5A5A5A] inter-font flex gap-10">
             <div className="flex gap-2 items-center">

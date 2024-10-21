@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import TeamSection from "../../components/team/TeamSection";
+import TeamFooter from "../../components/team/TeamFooter";
 
 export default function TeamPage() {
   useEffect(() => {
@@ -8,6 +9,7 @@ export default function TeamPage() {
   return (
     <div>
       <TeamSection />
+      <TeamFooter />
     </div>
   );
 }
