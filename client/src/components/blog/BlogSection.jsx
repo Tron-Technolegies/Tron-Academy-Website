@@ -3,12 +3,12 @@ import BlogCard from "./BlogCard";
 
 export default function BlogSection() {
   return (
-    <div className="px-[120px] py-10 bg-gradient-to-br from-[#F4E3FA]">
+    <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-br from-[#F4E3FA]">
       <div className="relative flex flex-col items-center gap-3">
-        <h4 className="roboto-font text-4xl font-black">
+        <h4 className="roboto-font md:text-4xl text-2xl font-black">
           <span className="text-[#B277F3]">Explore</span> Our Blogs
         </h4>
-        <div className="inter-font max-w-[550px] text-center font-medium">
+        <div className="inter-font max-w-[550px] text-center md:text-base text-sm font-medium">
           <p> Curious minds welcome! </p>
           <p>
             Check out our blog for a treasure trove of ideas, stories, and
@@ -17,11 +17,11 @@ export default function BlogSection() {
         </div>
         <img
           src="/blog/icon-1.png"
-          className="w-[56.35px] h-[58px] absolute right-5"
+          className="w-[56.35px] h-[58px] absolute sm:right-5 -right-5"
         ></img>
       </div>
       <div className="relative">
-        <div className="grid grid-cols-3 gap-5 my-5">
+        <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 my-5">
           <BlogCard />
           <BlogCard />
           <BlogCard />

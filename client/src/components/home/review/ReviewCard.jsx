@@ -5,7 +5,7 @@ import { FaStar } from "react-icons/fa6";
 export default function ReviewCard({ review, img, star, name, position }) {
   return (
     <div className="review-card p-5 rounded-lg h-[455px] flex flex-col justify-between gap-5 items-center source-font">
-      <p className="max-w-[350px] text-center text-[#FFFFFF] text-base">
+      <p className="max-w-[350px] text-center text-[#FFFFFF] md:text-base text-sm">
         {review}
       </p>
       <div className="flex gap-1">

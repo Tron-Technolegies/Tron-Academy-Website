@@ -12,7 +12,7 @@ function FooterContactSection() {
           content={"Based in Abu Dhabi, UAE"}
         />
         <FooterContactElt icon={<CiMail />} content={"tronacademy@gmail.com"} />
-        <FooterContactElt icon={<CiPhone />} content={"+91 1234567890"} />
+        <FooterContactElt icon={<CiPhone />} content={"+91 8330077882"} />
       </div>
     </div>
   );

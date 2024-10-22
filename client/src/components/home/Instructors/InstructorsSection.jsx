@@ -1,14 +1,16 @@
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import InstructorCard from "./InstructorCard";
+import { useNavigate } from "react-router-dom";
 
 export default function InstructorsSection() {
+  const navigate = useNavigate();
   return (
     <div
-      className="extra:px-[120px] extra:py-20 px-10 py-5 flex extra:flex-row flex-col-reverse gap-20 justify-between items-center extra:bg-no-repeat extra:bg-left bg-cover extra:bg-auto"
+      className="extra:px-[120px] extra:py-20 px-10 py-5 flex extra:flex-row flex-col-reverse lg:gap-20 gap-10 justify-between items-center extra:bg-no-repeat extra:bg-left bg-cover extra:bg-auto"
       style={{ backgroundImage: "url(/homeinstructorsbg.png)" }}
     >
-      <div className="grid grid-cols-3 gap-x-2 gap-y-5">
+      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-2 gap-y-5">
         <InstructorCard
           img={"/instructor1.jpg"}
           name={"Dilshad"}
@@ -41,16 +43,22 @@ export default function InstructorsSection() {
         />
       </div>
       <div className="extra:max-w-[365px] flex flex-col items-center extra:items-start gap-3">
-        <h4 className="text-4xl font-black roboto-font">
+        <h4 className="md:text-4xl text-2xl text-center font-black roboto-font">
           <span className="text-hoverPrimary">Our</span> Instructors
         </h4>
-        <p className="text-[#000000BF] text-sm roboto-font">
+        <p className="text-[#000000BF] text-sm roboto-font text-center">
           At Tron Academy, we strive to bring together the best professors for
           the best courses
         </p>
         <div className="flex extra:flex-row flex-col-reverse gap-2 items-end">
-          <img src="/homeinstructorsArrow.png"></img>
-          <button className="bg-black p-3 rounded-lg flex gap-2 items-center text-white hover:bg-hoverPrimary hover-animation">
+          <img
+            src="/homeinstructorsArrow.png"
+            className="md:w-[123px] md:h-[110px] w-[70px] h-[63px]"
+          ></img>
+          <button
+            onClick={() => navigate("/team")}
+            className="bg-black p-3 rounded-lg flex gap-2 items-center text-white hover:bg-hoverPrimary hover-animation"
+          >
             <span className="text-sm roboto-font">All Instructors</span>
             <span>
               <MdKeyboardArrowRight />

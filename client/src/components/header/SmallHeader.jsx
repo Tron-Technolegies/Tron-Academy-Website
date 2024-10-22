@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { handleChatClick } from "../../utils/whatsApp";
 
 export default function SmallHeader({ setSmallBar }) {
   return (
@@ -40,7 +41,10 @@ export default function SmallHeader({ setSmallBar }) {
         >
           About
         </NavLink>
-        <button className="rounded-lg px-3 py-2 bg-primary hover:bg-hoverPrimary hover-animation text-white hover:py-[10px]">
+        <button
+          onClick={() => handleChatClick("know more about Tron Academy")}
+          className="rounded-lg px-3 py-2 bg-primary hover:bg-hoverPrimary hover-animation text-white hover:py-[10px]"
+        >
           Contact us
         </button>
       </div>

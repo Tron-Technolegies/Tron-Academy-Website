@@ -5,17 +5,20 @@ export default function WhySection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tr from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center text-center relative">
-        <h4 className="roboto-font text-4xl font-black">
+        <h4 className="roboto-font md:text-4xl text-2xl font-black">
           <span className="text-hoverPrimary">Why</span> Tron Academy
         </h4>
-        <p className="text-[#5E5E5E] roboto-font font-normal text-base leading-[22px] max-w-[524px]">
+        <p className="text-[#5E5E5E] roboto-font font-normal text-sm lg:text-base leading-[22px] max-w-[524px]">
           At Tron Academy, we focus on providing personalized, practical, and
           results-driven learning experiences. Here’s why you should choose us:
         </p>
-        <img src="/robot.png" className="absolute left-10"></img>
+        <img
+          src="/robot.png"
+          className="absolute lg:left-10 md:left-2 -left-10 md:w-[103px] md:h-[86px] w-[70px] h-[58px]"
+        ></img>
       </div>
       <div className="flex lg:flex-row flex-col justify-around items-center my-14">
-        <div className="flex flex-col  gap-10">
+        <div className="flex flex-col gap-10">
           <WhyDetailElt
             title={"Portfolio Building"}
             content={

@@ -2,12 +2,12 @@ import React from "react";
 
 export default function CelebrationSection() {
   return (
-    <div className="px-[120px] py-20 flex flex-col gap-5 items-center">
+    <div className="lg:px-[120px] lg:py-20 px-10 py-5 flex flex-col gap-5 items-center">
       <div className="flex flex-col gap-5 items-center">
-        <h5 className="roboto-font text-4xl font-black">
+        <h5 className="roboto-font md:text-4xl text-2xl font-black text-center">
           Events & Celebrations
         </h5>
-        <p className="inter-font text-base max-w-[900px] text-center">
+        <p className="inter-font md:text-base text-sm max-w-[900px] text-center">
           At tron Digital we believe in celebrating life, not just living it.
           The Tron family celebrates all the festivals, birthdays of team
           members, and indulges in good natured frolic during team outings.
@@ -15,7 +15,7 @@ export default function CelebrationSection() {
         </p>
       </div>
 
-      <div className="grid grid-cols-4 gap-y-8 gap-x-5 my-20 mx-auto">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-y-8 gap-x-5 my-20 mx-auto">
         <div className="flex flex-col items-center gap-2 -translate-y-14">
           <img src="/event-1.jpg" className="w-[234px] h-[316.82px]"></img>
           <img src="/event-2.jpg" className="w-[234px] h-[184.3px]"></img>

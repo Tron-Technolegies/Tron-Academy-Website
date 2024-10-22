@@ -8,7 +8,7 @@ export default function TeamCard({ img }) {
         className="w-[331px] h-[373px] rounded-xl object-cover object-top"
       ></img>
       <p className="text-[15px] font-medium">Developer</p>
-      <p className="text-xl font-semibold">Mr UnKnown</p>
+      <p className="md:text-xl text-base font-semibold">Mr UnKnown</p>
     </div>
   );
 }

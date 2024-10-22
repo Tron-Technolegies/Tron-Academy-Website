@@ -9,7 +9,9 @@ export default function CourseDescription({
 }) {
   return (
     <div className="flex flex-col gap-5 items-center animate-slideInLeft">
-      <h4 className="comic-font text-5xl text-[#B277F3] font-bold ">{title}</h4>
+      <h4 className="comic-font md:text-5xl text-3xl text-[#B277F3] font-bold ">
+        {title}
+      </h4>
       <div className="flex gap-3 items-center ">
         <img src={img}></img>
         <p className="font-medium">
@@ -24,12 +26,15 @@ export default function CourseDescription({
           Pill
         </p>
       </div>
-      <p className="max-w-[800px] text-center inter-font text-[#081330]">
+      <p className="max-w-[800px] text-center md:text-base text-sm inter-font text-[#081330]">
         {desc}
       </p>
-      <div className="bg-[#FAEFFF] grid grid-cols-3 gap-y-3 w-screen justify-items-center py-3 ">
+      <div className="bg-[#FAEFFF] grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-y-3 w-screen justify-items-center p-3 ">
         {points.map((x, index) => (
-          <p className="inter-font text-[#33009E] font-semibold" key={index}>
+          <p
+            className="inter-font text-[#33009E] md:text-base text-sm font-semibold"
+            key={index}
+          >
             {x}
           </p>
         ))}

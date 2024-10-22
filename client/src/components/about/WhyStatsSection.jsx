@@ -9,32 +9,40 @@ const stats = [
 
 export default function WhyStatsSection() {
   return (
-    <div className="px-[120px] py-20 inter-font flex flex-col gap-7 items-center relative">
+    <div className="lg:px-[120px] lg:py-20 px-10 py-5 inter-font flex flex-col gap-7 items-center relative">
       <div className="flex flex-col gap-3 items-center">
-        <h4 className="roboto-font text-4xl font-black">
+        <h4 className="roboto-font md:text-4xl text-2xl text-center font-black">
           <span className="text-[#A157DC]">Why</span> Should you prefer us
         </h4>
-        <p>Because we’re the best- there’s simply no comparison.</p>
+        <p className="text-center md:text-base text-sm">
+          Because we’re the best- there’s simply no comparison.
+        </p>
       </div>
-      <p className="max-w-[800px] text-center">
+      <p className="max-w-[800px] md:text-base text-sm text-center z-10">
          Our courses in Coding, Multimedia, and Digital Marketing aren’t just
         classes; they’re your ticket to the top. Whether you’re starting out or
         aiming high, We prepare you to conquer the competition. Don’t just
         learn-dominate. Choose us and watch your future soar.
       </p>
-      <div className="flex justify-between w-full my-5">
+      <div className="flex sm:flex-row flex-col gap-10 items-center justify-between w-full my-5">
         {stats.map((x, index) => (
-          <div key={index} className="flex flex-col gap-5 items-start">
+          <div
+            key={index}
+            className="flex flex-col gap-5 sm:items-start items-center sm:border-0 border sm:p-0 p-3 rounded-lg sm:w-fit w-[300px] sm:shadow-none shadow-md"
+          >
             <img src={x.img}></img>
-            <p className="text-5xl font-bold">{x.num}</p>
-            <p className="text-2xl">{x.name}</p>
+            <p className="lg:text-5xl text-3xl font-bold">{x.num}</p>
+            <p className="lg:text-2xl text-xl">{x.name}</p>
           </div>
         ))}
       </div>
-      <p className="text-[#A157DC] text-[15px] font-medium">
+      <p className="text-[#A157DC] md:text-[15px] text-sm text-center font-medium">
         So why wait? Start your journey with the world's leading experts today!
       </p>
-      <img src="/about/robot-2.png" className="absolute top-10 right-10"></img>
+      <img
+        src="/about/robot-2.png"
+        className="absolute md:w-[88px] md:h-[92px] w-[40px] h-[42px] sm:top-10 sm:right-10 right-0"
+      ></img>
     </div>
   );
 }

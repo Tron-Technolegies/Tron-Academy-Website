@@ -2,11 +2,11 @@ import React from "react";
 
 export default function SingleBlogContent() {
   return (
-    <div className="px-[120px] py-20 inter-font bg-gradient-to-tl from-[#F4E3FA]">
-      <h3 className="text-3xl">
+    <div className="lg:px-[120px] lg:py-20 px-10 py-5 inter-font bg-gradient-to-tl from-[#F4E3FA]">
+      <h3 className="md:text-3xl text-lg text-center">
         Dive into the dynamic world of digital marketing
       </h3>
-      <div className="flex flex-col gap-7 my-5 text-xl font-light">
+      <div className="flex flex-col gap-7 my-5 md:text-xl text-base font-light">
         <p>Wondering how to start a blog?</p>
         <p>
           If you’ve ever read a blog post, you’ve consumed content from a
