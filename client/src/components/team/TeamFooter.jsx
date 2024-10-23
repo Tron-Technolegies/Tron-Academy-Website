@@ -1,5 +1,6 @@
 import React from "react";
 import { handleChatClick } from "../../utils/whatsApp";
+import { motion } from "framer-motion";
 
 export default function TeamFooter() {
   return (
@@ -20,12 +21,16 @@ export default function TeamFooter() {
           today!
         </p>
       </div>
-      <button
+      <motion.button
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1, backgroundColor: "black" }} // Change color on hover
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 300 }} // Smooth animation
         onClick={() => handleChatClick("enroll for a course")}
-        className="px-5 py-2 bg-[#A157DC] text-white rounded-s-full rounded-e-full hover:bg-black hover-animation"
+        className="px-5 py-2 bg-[#A157DC] text-white rounded-s-full rounded-e-full"
       >
         Enroll Now
-      </button>
+      </motion.button>
     </div>
   );
 }

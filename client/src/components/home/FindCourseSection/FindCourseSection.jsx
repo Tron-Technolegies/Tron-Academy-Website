@@ -36,15 +36,11 @@ export default function FindCourseSection() {
         </div>
       </div>
       <div className="flex md:flex-row flex-col gap-5 md:justify-around items-center my-10 mt-20">
-        <DetailCard icon={<FaUsers />} no={"1000+"} content={"Students"} />
-        <DetailCard
-          icon={<RiPresentationFill />}
-          no={"15+"}
-          content={"Mentors"}
-        />
+        <DetailCard icon={<FaUsers />} no={1000} content={"Students"} />
+        <DetailCard icon={<RiPresentationFill />} no={15} content={"Mentors"} />
         <DetailCard
           icon={<FaHandshakeSimple />}
-          no={"50+"}
+          no={50}
           content={"Placement Partners"}
         />
       </div>

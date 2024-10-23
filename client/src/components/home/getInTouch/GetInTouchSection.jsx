@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormInput from "../../FormInput";
 import FormSelect from "../../FormSelect";
 import { handleEnquiryFormClick } from "../../../utils/whatsApp";
+import { motion } from "framer-motion";
 
 export default function GetInTouchSection() {
   const [name, setName] = useState("");
@@ -58,14 +59,18 @@ export default function GetInTouchSection() {
               />
             </div>
           </div>
-          <button
+          <motion.button
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1, backgroundColor: "#CA90F2" }} // Change color on hover
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 300 }} // Smooth animation
             className="px-4 py-2 bg-black text-white rounded-lg hover:bg-primary"
             onClick={() =>
               handleEnquiryFormClick({ name, email, course, message })
             }
           >
             Contact
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

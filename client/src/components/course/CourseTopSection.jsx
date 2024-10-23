@@ -11,6 +11,7 @@ import {
   multiMedia,
   multimediaCourses,
 } from "../../utils/course";
+import { motion } from "framer-motion";
 
 const buttonNames = ["Digital Marketing", "Coding", "Multimedia"];
 
@@ -28,11 +29,49 @@ export default function CourseTopSection() {
         </p>
       </div>
       <div className="flex justify-between items-start">
-        <img src="/course/icon-2.png" className="w-[26.83px] h-[26.83px]"></img>
-        <img
+        <motion.img
+          src="/course/icon-2.png"
+          className="w-[26.83px] h-[26.83px] hidden sm:block"
+          animate={{
+            rotate: [0, 360], // Continuous full rotation
+            x: [0, 50, 100, 50, 0], // Simulating the arc movement on the X-axis
+            y: [0, -30, 0, 30, 0], // Simulating the arc movement on the Y-axis
+          }}
+          transition={{
+            rotate: {
+              repeat: Infinity, // Infinite rotation
+              duration: 4, // Total time to complete one rotation
+              ease: "linear", // Smooth linear rotation
+            },
+            x: {
+              repeat: Infinity, // Repeat the arc motion
+              duration: 4, // Duration for one back-and-forth arc motion
+              repeatType: "reverse", // Move back and forth along the arc
+              ease: "easeInOut", // Smooth easing for arc motion
+            },
+            y: {
+              repeat: Infinity, // Repeat the arc motion
+              duration: 4, // Duration for one back-and-forth arc motion
+              repeatType: "reverse", // Move back and forth along the arc
+              ease: "easeInOut", // Smooth easing for arc motion
+            },
+          }}
+        ></motion.img>
+        <motion.img
           src="/course/icon-1.png"
           className="md:w-[116px] md:h-[58px] w-[80px] h-[40px]"
-        ></img>
+          animate={{
+            rotateY: [-180, 180], // Rotate back and forth by 180 degrees
+          }}
+          transition={{
+            rotateY: {
+              repeat: Infinity, // Infinite loop
+              repeatType: "reverse", // Back and forth
+              duration: 2, // Duration for one full rotation cycle (back and forth)
+              ease: "easeInOut", // Smooth easing for the rotation
+            },
+          }}
+        ></motion.img>
       </div>
       <div>
         {active === "Digital Marketing" && (
@@ -67,7 +106,7 @@ export default function CourseTopSection() {
         <div className="flex md:flex-row flex-col items-center gap-10 justify-center my-10">
           {buttonNames.map((x, index) => (
             <button
-              className={`px-4 py-2 flex gap-3 w-[280px] lg:text-base text-sm justify-center items-center inter-font font-semibold rounded-lg hover:bg-[#B277F3] hover:text-white hover-animation shadow-md ${
+              className={`px-4 py-2 flex gap-3 w-[280px] lg:text-base text-sm justify-center items-center inter-font font-semibold rounded-lg hover:bg-[#B277F3] hover:scale-110 hover:text-white hover-animation shadow-md ${
                 active === x ? "bg-[#B277F3] text-white" : "bg-[#FAEFFF]"
               }`}
               onClick={() => setActive(x)}
@@ -110,7 +149,21 @@ export default function CourseTopSection() {
             ))}
         </div>
       </div>
-      <img src="/course/icon-3.png" className="w-[116px] h-[58px]"></img>
+      <motion.img
+        src="/course/icon-3.png"
+        className="w-[116px] h-[58px]"
+        animate={{
+          rotateY: [-180, 180], // Rotate back and forth by 180 degrees
+        }}
+        transition={{
+          rotateY: {
+            repeat: Infinity, // Infinite loop
+            repeatType: "reverse", // Back and forth
+            duration: 2, // Duration for one full rotation cycle (back and forth)
+            ease: "easeInOut", // Smooth easing for the rotation
+          },
+        }}
+      ></motion.img>
     </div>
   );
 }

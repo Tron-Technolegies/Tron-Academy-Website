@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 const stats = [
@@ -39,10 +40,28 @@ export default function WhyStatsSection() {
       <p className="text-[#A157DC] md:text-[15px] text-sm text-center font-medium">
         So why wait? Start your journey with the world's leading experts today!
       </p>
-      <img
+      <motion.img
         src="/about/robot-2.png"
         className="absolute md:w-[88px] md:h-[92px] w-[40px] h-[42px] sm:top-10 sm:right-10 right-0"
-      ></img>
+        animate={{
+          rotate: [-15, 15], // Swing between -15 to 15 degrees
+          x: [0, 5, 0], // Translate 20px left and right
+        }}
+        transition={{
+          rotate: {
+            repeat: Infinity, // Infinite loop
+            repeatType: "reverse", // Back and forth motion
+            duration: 1, // Duration of each swing
+            ease: "easeInOut", // Smooth pendulum effect
+          },
+          x: {
+            repeat: Infinity, // Infinite loop
+            repeatType: "reverse", // Moves back and forth
+            duration: 1, // Sync with the swing duration
+            ease: "easeInOut", // Smooth easing
+          },
+        }}
+      ></motion.img>
     </div>
   );
 }

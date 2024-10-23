@@ -4,6 +4,7 @@ import SingleBlogContent from "../../components/blog/singleblog/SingleBlogConten
 import { Link } from "react-router-dom";
 import BlogCard from "../../components/blog/BlogCard";
 import BlogFooter from "../../components/blog/BlogFooter";
+import { motion } from "framer-motion";
 
 export default function SingleBlogPage() {
   useEffect(() => {
@@ -17,7 +18,7 @@ export default function SingleBlogPage() {
         <div className="flex justify-between">
           <h4 className="md:text-3xl text-lg font-medium">Related Blogs</h4>
           <Link
-            className="md:px-4 px-2 py-2 rounded-lg border hover:bg-black hover:text-white hover-animation"
+            className="md:px-4 px-2 py-2 rounded-lg border hover:scale-110 hover:bg-black hover:text-white hover-animation"
             to={"/blog"}
           >
             View All

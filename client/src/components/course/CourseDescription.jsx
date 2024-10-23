@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function CourseDescription({
@@ -13,7 +14,20 @@ export default function CourseDescription({
         {title}
       </h4>
       <div className="flex gap-3 items-center ">
-        <img src={img}></img>
+        <motion.img
+          animate={{
+            rotateY: [0, 180], // Rotate forward 360 degrees, then reverse
+          }}
+          transition={{
+            rotateY: {
+              repeat: Infinity, // Repeat indefinitely
+              repeatType: "reverse", // Alternate between forward and backward rotation
+              duration: 2, // Duration for one full forward and backward rotation cycle
+              ease: "easeInOut", // Smooth ease in and out for the rotation
+            },
+          }}
+          src={img}
+        ></motion.img>
         <p className="font-medium">
           The{" "}
           <span

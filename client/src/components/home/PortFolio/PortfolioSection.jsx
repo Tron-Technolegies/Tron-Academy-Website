@@ -1,5 +1,6 @@
 import React from "react";
 import PortfolioDetailCard from "./PortfolioDetailCard";
+import { motion } from "framer-motion";
 
 export default function PortfolioSection() {
   return (
@@ -15,10 +16,28 @@ export default function PortfolioSection() {
             their skills.
           </p>
         </div>
-        <img
+        <motion.img
           src="/portfolioRobot.png"
           className="w-[81.38px] h-[92.37px]"
-        ></img>
+          animate={{
+            rotate: [-15, 15], // Swing between -15 to 15 degrees
+            x: [0, 5, 0], // Translate 20px left and right
+          }}
+          transition={{
+            rotate: {
+              repeat: Infinity, // Infinite loop
+              repeatType: "reverse", // Back and forth motion
+              duration: 1, // Duration of each swing
+              ease: "easeInOut", // Smooth pendulum effect
+            },
+            x: {
+              repeat: Infinity, // Infinite loop
+              repeatType: "reverse", // Moves back and forth
+              duration: 1, // Sync with the swing duration
+              ease: "easeInOut", // Smooth easing
+            },
+          }}
+        ></motion.img>
       </div>
       <div className="flex sm:flex-col flex-row sm:gap-10 gap-5">
         <div className="flex sm:flex-row flex-col items-center">

@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 export default function Consultation() {
@@ -20,12 +21,16 @@ export default function Consultation() {
           Feel free to get in touch with us!
         </p>
       </div>
-      <button
+      <motion.button
         onClick={() => (window.location.href = "tel:+918330077882")}
-        className="inter-font bg-white px-5 py-3 rounded-s-full w-fit rounded-e-full font-semibold text-[#9A49DB] hover:bg-black hover:text-white hover-animation"
+        initial={{ scale: 1 }}
+        whileHover={{ scale: 1.1, backgroundColor: "black", color: "white" }} // Change color on hover
+        whileTap={{ scale: 0.9 }}
+        transition={{ type: "spring", stiffness: 300 }} // Smooth animation
+        className="inter-font bg-white px-5 py-3 rounded-s-full w-fit rounded-e-full font-semibold text-[#9A49DB] "
       >
         Call Now
-      </button>
+      </motion.button>
     </div>
   );
 }

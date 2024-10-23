@@ -1,5 +1,6 @@
 import React from "react";
 import WhyDetailElt from "./WhyDetailElt";
+import { motion } from "framer-motion";
 
 export default function WhySection() {
   return (
@@ -12,10 +13,28 @@ export default function WhySection() {
           At Tron Academy, we focus on providing personalized, practical, and
           results-driven learning experiences. Here’s why you should choose us:
         </p>
-        <img
+        <motion.img
           src="/robot.png"
           className="absolute lg:left-10 md:left-2 -left-10 md:w-[103px] md:h-[86px] w-[70px] h-[58px]"
-        ></img>
+          animate={{
+            rotate: [-15, 15], // Swing between -15 to 15 degrees
+            x: [0, 5, 0], // Translate 20px left and right
+          }}
+          transition={{
+            rotate: {
+              repeat: Infinity, // Infinite loop
+              repeatType: "reverse", // Back and forth motion
+              duration: 1, // Duration of each swing
+              ease: "easeInOut", // Smooth pendulum effect
+            },
+            x: {
+              repeat: Infinity, // Infinite loop
+              repeatType: "reverse", // Moves back and forth
+              duration: 1, // Sync with the swing duration
+              ease: "easeInOut", // Smooth easing
+            },
+          }}
+        ></motion.img>
       </div>
       <div className="flex lg:flex-row flex-col justify-around items-center my-14">
         <div className="flex flex-col gap-10">

@@ -1,5 +1,6 @@
 import React from "react";
 import { handleChatClick } from "../../utils/whatsApp";
+import { motion } from "framer-motion";
 
 export default function AboutHeader() {
   return (
@@ -38,12 +39,19 @@ export default function AboutHeader() {
               </p>
             </div>
           </div>
-          <button
+          <motion.button
+            initial={{ scale: 1 }}
+            whileHover={{
+              scale: 1.1,
+              backgroundColor: "black",
+            }} // Change color on hover
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 300 }} // Smooth animation
             onClick={() => handleChatClick("know more about Tron Academy")}
-            className="bg-[#A157DC] w-fit px-5 py-3 md:text-base text-sm rounded-s-full rounded-e-full text-white hover:bg-black hover-animation"
+            className="bg-[#A157DC] w-fit px-5 py-3 md:text-base text-sm rounded-s-full rounded-e-full text-white"
           >
             Contact Us
-          </button>
+          </motion.button>
         </div>
       </div>
       <div>
@@ -52,10 +60,28 @@ export default function AboutHeader() {
           className="md:max-w-[397px] md:max-h-[168px] max-w-[250px] max-h-[106px]"
         ></img>
       </div>
-      <img
+      <motion.img
         src="/about/robot.png"
         className="absolute md:w-[67px] md:h-[85px] w-[45px] h-[57px] sm:right-20 sm:bottom-10 top-5 right-0"
-      ></img>
+        animate={{
+          rotate: [-15, 15], // Swing between -15 to 15 degrees
+          x: [0, 5, 0], // Translate 20px left and right
+        }}
+        transition={{
+          rotate: {
+            repeat: Infinity, // Infinite loop
+            repeatType: "reverse", // Back and forth motion
+            duration: 1, // Duration of each swing
+            ease: "easeInOut", // Smooth pendulum effect
+          },
+          x: {
+            repeat: Infinity, // Infinite loop
+            repeatType: "reverse", // Moves back and forth
+            duration: 1, // Sync with the swing duration
+            ease: "easeInOut", // Smooth easing
+          },
+        }}
+      ></motion.img>
     </div>
   );
 }

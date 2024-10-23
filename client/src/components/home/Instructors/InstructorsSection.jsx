@@ -2,6 +2,7 @@ import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import InstructorCard from "./InstructorCard";
 import { useNavigate } from "react-router-dom";
+import { motion } from "framer-motion";
 
 export default function InstructorsSection() {
   const navigate = useNavigate();
@@ -55,15 +56,19 @@ export default function InstructorsSection() {
             src="/homeinstructorsArrow.png"
             className="md:w-[123px] md:h-[110px] w-[70px] h-[63px]"
           ></img>
-          <button
+          <motion.button
             onClick={() => navigate("/team")}
-            className="bg-black p-3 rounded-lg flex gap-2 items-center text-white hover:bg-hoverPrimary hover-animation"
+            initial={{ scale: 1 }}
+            whileHover={{ scale: 1.1, backgroundColor: "#CA90F2" }} // Change color on hover
+            whileTap={{ scale: 0.9 }}
+            transition={{ type: "spring", stiffness: 300 }} // Smooth animation
+            className="bg-black p-3 rounded-lg flex gap-2 items-center text-white"
           >
             <span className="text-sm roboto-font">All Instructors</span>
             <span>
               <MdKeyboardArrowRight />
             </span>
-          </button>
+          </motion.button>
         </div>
       </div>
     </div>

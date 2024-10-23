@@ -1,5 +1,6 @@
 import React from "react";
 import { handleChatClick } from "../../utils/whatsApp";
+import { motion } from "framer-motion";
 
 export default function JoinNowSection() {
   return (
@@ -9,12 +10,19 @@ export default function JoinNowSection() {
           So why wait? Start one of our high quality courses from the world's
           leading experts today!
         </p>
-        <button
+        <motion.button
+          initial={{ scale: 1 }}
+          whileHover={{
+            scale: 1.1,
+            backgroundColor: "#CA90F2",
+          }} // Change color on hover
+          whileTap={{ scale: 0.9 }}
+          transition={{ type: "spring", stiffness: 300 }} // Smooth animation
           onClick={() => handleChatClick("join Tron Academy")}
-          className="px-4 py-2 md:text-base text-sm bg-black rounded-lg text-white hover:bg-primary hover-animation"
+          className="px-4 py-2 md:text-base text-sm bg-black rounded-lg text-white"
         >
           Join Now
-        </button>
+        </motion.button>
       </div>
     </div>
   );
