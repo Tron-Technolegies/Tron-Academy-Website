@@ -25,7 +25,7 @@ export default function GetInTouchSection() {
             <h5 className="lg:text-3xl md:text-xl text-lg font-semibold">
               Email
             </h5>
-            <p className="md:text-base text-sm">contact@tronacademy.ae</p>
+            <p className="md:text-base text-sm">tronacademyckd@gmail.com</p>
           </div>
         </div>
         <div className="md:w-1/2 w-full">

@@ -55,10 +55,10 @@ export default function AboutHeader() {
         </div>
       </div>
       <div>
-        <img
+        <motion.img
           src="/about/logo.png"
           className="md:max-w-[397px] md:max-h-[168px] max-w-[250px] max-h-[106px]"
-        ></img>
+        ></motion.img>
       </div>
       <motion.img
         src="/about/robot.png"
