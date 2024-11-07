@@ -44,7 +44,7 @@ export default function InstructorsSection() {
         />
       </div>
       <div className="extra:max-w-[365px] flex flex-col items-center extra:items-start gap-3">
-        <h4 className="md:text-4xl text-2xl text-center font-black roboto-font">
+        <h4 className="md:text-4xl text-2xl text-center font-black comic-font">
           <span className="text-hoverPrimary">Our</span> Instructors
         </h4>
         <p className="text-[#000000BF] text-sm roboto-font text-center">

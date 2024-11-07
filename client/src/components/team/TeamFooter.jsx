@@ -12,7 +12,7 @@ export default function TeamFooter() {
         backgroundPosition: "center", // Center the background image
       }}
     >
-      <h4 className="roboto-font font-black md:text-4xl text-2xl text-center">
+      <h4 className="comic-font font-black md:text-4xl text-2xl text-center">
         <span className="text-[#B277F3]">Get</span> Started with Tron Academy
       </h4>
       <div className="inter-font md:text-lg text-base max-w-[580px] text-center">

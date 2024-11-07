@@ -9,7 +9,7 @@ export default function ExploreCourseSection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-br from-[#F4E3FA] from-5% flex xl:flex-row flex-col justify-between item-center pb-20">
       <div className="xl:max-w-[300px] flex flex-col items-center xl:items-start justify-center gap-5">
-        <h4 className="md:text-4xl text-2xl text-center font-black roboto-font">
+        <h4 className="md:text-4xl text-2xl text-center font-black comic-font">
           <span className="text-hoverPrimary">Explore</span> Our Trending Course
         </h4>
         <div className="flex gap-3 items-center">

@@ -4,7 +4,7 @@ import TeamCard from "./TeamCard";
 export default function TeamSection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-[#FDFAFE] flex flex-col gap-5 items-center relative">
-      <h4 className="roboto-font font-black md:text-4xl text-2xl">
+      <h4 className="comic-font font-black md:text-4xl text-2xl">
         <span className="text-[#B277F3]">Our</span> Team
       </h4>
       <p className="inter-font font-medium max-w-[720px] md:text-base text-sm text-center z-10">

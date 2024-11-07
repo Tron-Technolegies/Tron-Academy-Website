@@ -101,3 +101,7 @@ body {
 .slick-next::before {
   color: #b277f3 !important; /* In case slick uses a pseudo-element */
 }
+
+.landing-height {
+  min-height: calc(100vh - 100px);
+}

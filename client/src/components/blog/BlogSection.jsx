@@ -5,7 +5,7 @@ export default function BlogSection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-br from-[#F4E3FA]">
       <div className="relative flex flex-col items-center gap-3">
-        <h4 className="roboto-font md:text-4xl text-2xl font-black">
+        <h4 className="comic-font md:text-4xl text-2xl font-black">
           <span className="text-[#B277F3]">Explore</span> Our Blogs
         </h4>
         <div className="inter-font max-w-[550px] text-center md:text-base text-sm font-medium">

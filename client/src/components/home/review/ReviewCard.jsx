@@ -8,24 +8,26 @@ export default function ReviewCard({ review, img, star, name, position }) {
       <p className="max-w-[350px] text-center text-[#FFFFFF] md:text-base text-sm">
         {review}
       </p>
-      <div className="flex gap-1">
-        {Array(star)
-          .fill()
-          .map((_, index) => (
-            <FaStar color="#FFB800" key={index} />
-          ))}
-        {Array(5 - star)
-          .fill()
-          .map((_, index) => (
-            <CiStar color="#FFB800" key={index} />
-          ))}
+      <div className="flex flex-col gap-3 items-center">
+        <div className="flex gap-1">
+          {Array(star)
+            .fill()
+            .map((_, index) => (
+              <FaStar color="#FFB800" key={index} />
+            ))}
+          {Array(5 - star)
+            .fill()
+            .map((_, index) => (
+              <CiStar color="#FFB800" key={index} />
+            ))}
+        </div>
+        <img
+          src={img}
+          className="w-[50px] h-[50px] rounded-full object-cover"
+        ></img>
+        <p className="text-[#FFFFFF] text-lg">{name}</p>
+        <p className="text-[#FFFFFF99] text-sm">{position}</p>
       </div>
-      <img
-        src={img}
-        className="w-[50px] h-[50px] rounded-full object-cover"
-      ></img>
-      <p className="text-[#FFFFFF] text-lg">{name}</p>
-      <p className="text-[#FFFFFF99] text-sm">{position}</p>
     </div>
   );
 }

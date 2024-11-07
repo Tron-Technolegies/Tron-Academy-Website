@@ -20,7 +20,7 @@ export default function CourseTopSection() {
   return (
     <div className="bg-[#FDFAFE] lg:px-[120px] lg:py-10 px-10 py-5">
       <div className="flex flex-col gap-3 mx-auto items-center text-center max-w-[550px]">
-        <h4 className="roboto-font md:text-4xl text-2xl font-black">
+        <h4 className="comic-font md:text-4xl text-2xl font-black">
           <span className="text-hoverPrimary">Explore</span> Course
         </h4>
         <p className="inter-font md:text-base text-sm">
@@ -122,30 +122,15 @@ export default function CourseTopSection() {
         <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 justify-items-center">
           {active === "Digital Marketing" &&
             digitalCourses.map((x) => (
-              <CourseCard
-                key={x.id}
-                name={x.name}
-                months={x.months}
-                file={"/course/digital.pdf"}
-              />
+              <CourseCard key={x.id} name={x.name} months={x.months} />
             ))}
           {active === "Coding" &&
             codingCourses.map((x) => (
-              <CourseCard
-                key={x.id}
-                name={x.name}
-                months={x.months}
-                file={"/course/coding.pdf"}
-              />
+              <CourseCard key={x.id} name={x.name} months={x.months} />
             ))}
           {active === "Multimedia" &&
             multimediaCourses.map((x) => (
-              <CourseCard
-                key={x.id}
-                name={x.name}
-                months={x.months}
-                file={"/course/multimedia.pdf"}
-              />
+              <CourseCard key={x.id} name={x.name} months={x.months} />
             ))}
         </div>
       </div>

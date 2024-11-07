@@ -24,7 +24,7 @@ export default function NextBatchSection() {
         <img src="/course/icon-5.png" className="w-[53.26px] h-[53.26px]"></img>
       </div>
       <div className="flex flex-col gap-5 items-center">
-        <h3 className="md:text-4xl text-2xl font-black roboto-font">
+        <h3 className="md:text-4xl text-2xl font-black comic-font">
           <span className="text-[#B277F3]">Our</span> Next Batch
         </h3>
         <div className="inter-font flex flex-col gap-1 items-center md:text-base text-center text-sm">

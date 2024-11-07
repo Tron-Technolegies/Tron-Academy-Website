@@ -10,7 +10,7 @@ export default function BlogFooter() {
         backgroundPosition: "center", // Center the background image
       }}
     >
-      <h4 className="roboto-font font-black md:text-4xl text-2xl text-center">
+      <h4 className="comic-font font-black md:text-4xl text-2xl text-center">
         <span className="text-[#B277F3]">Get</span> Something to share? Prove it
         !
       </h4>

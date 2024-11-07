@@ -4,7 +4,7 @@ export default function MissionSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5 flex md:flex-row flex-col-reverse justify-between gap-5 items-center relative">
       <div className="flex flex-col gap-3 items-start">
-        <h5 className="roboto-font md:text-4xl text-2xl font-black">
+        <h5 className="comic-font md:text-4xl text-2xl font-black">
           <span className="text-[#A157DC] ">Our</span> Mission
         </h5>
         <p className="max-w-[600px] inter-font md:text-base text-sm">

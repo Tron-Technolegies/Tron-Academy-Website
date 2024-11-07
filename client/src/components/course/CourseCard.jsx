@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import React from "react";
 import { IoIosArrowRoundForward } from "react-icons/io";
+import { handleChatClick } from "../../utils/whatsApp";
 
-export default function CourseCard({ name, months, file }) {
+export default function CourseCard({ name, months }) {
   return (
     <div className="bg-[#B277F3] w-[280px] px-4 py-2 rounded-lg shadow-md shadow-[#B277F3] inter-font text-white flex flex-col justify-between h-[120px] animate-slideInTop">
       <h4 className="font-semibold">{name?.toUpperCase()}</h4>
       <div className="flex justify-between items-center">
         <p className="text-sm font-semibold">{months}</p>
-        <motion.a
-          href={file}
-          download
+        <motion.button
           initial={{ scale: 1 }}
+          onClick={() => handleChatClick(`know about ${name}`)}
           whileHover={{ scale: 1.1, backgroundColor: "black", color: "white" }} // Change color on hover
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 300 }} // Smooth animation
@@ -21,7 +21,7 @@ export default function CourseCard({ name, months, file }) {
           <span>
             <IoIosArrowRoundForward />
           </span>
-        </motion.a>
+        </motion.button>
       </div>
     </div>
   );

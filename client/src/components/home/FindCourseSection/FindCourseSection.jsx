@@ -12,7 +12,7 @@ export default function FindCourseSection() {
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center my-10">
         <div className="relative">
-          <h4 className="roboto-font md:text-4xl text-2xl font-black">
+          <h4 className="comic-font md:text-4xl text-2xl font-black">
             Find Your Favourite Course
           </h4>
           <img

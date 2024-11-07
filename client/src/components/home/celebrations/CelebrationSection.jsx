@@ -4,7 +4,7 @@ export default function CelebrationSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5 flex flex-col gap-5 items-center">
       <div className="flex flex-col gap-5 items-center">
-        <h5 className="roboto-font md:text-4xl text-2xl font-black text-center">
+        <h5 className="comic-font md:text-4xl text-2xl font-black text-center">
           Events & Celebrations
         </h5>
         <p className="inter-font md:text-base text-sm max-w-[900px] text-center">

@@ -18,7 +18,7 @@ export default function WhyStatsSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5 inter-font flex flex-col gap-7 items-center relative">
       <div className="flex flex-col gap-3 items-center">
-        <h4 className="roboto-font md:text-4xl text-2xl text-center font-black">
+        <h4 className="comic-font md:text-4xl text-2xl text-center font-black">
           <span className="text-[#A157DC]">Why</span> Should you prefer us
         </h4>
         <p className="text-center md:text-base text-sm">

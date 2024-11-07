@@ -10,7 +10,7 @@ export default function AboutHeader() {
     >
       <div className="flex flex-col gap-20 max-w-[700px] justify-start">
         <div className="flex flex-col gap-5">
-          <h3 className="roboto-font md:text-4xl text-2xl font-black">
+          <h3 className="comic-font md:text-4xl text-2xl font-black">
             <span className="text-[#B277F3]">About </span>Us
           </h3>
           <p className="inter-font md:text-lg text-base">

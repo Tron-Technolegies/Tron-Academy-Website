@@ -6,11 +6,11 @@ export default function PortfolioSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5% flex flex-col gap-10">
       <div className="flex justify-between md:items-end items-start">
-        <div className="max-w-[810px] flex flex-col gap-5 inter-font">
+        <div className="max-w-[810px] flex flex-col gap-5 comic-font">
           <h4 className="md:text-5xl text-3xl font-semibold">
             Portfolio & Work experience certificate
           </h4>
-          <p className="md:text-base text-sm">
+          <p className="md:text-base inter-font text-sm">
             At Tron Academy, we believe in equipping students with not just
             knowledge but also the support they need to effectively showcase
             their skills.

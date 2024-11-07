@@ -34,7 +34,7 @@ export default function ReviewSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5 bg-gradient-to-bl from-[#52394b]  to-[#1A1A1AE5] source-font tracking-wider">
       <div className="flex flex-col gap-5 items-center">
-        <h4 className="review-header text-center md:text-5xl text-3xl font-bold source-font">
+        <h4 className="review-header text-center md:text-5xl text-3xl font-bold comic-font">
           What industry experts say!
         </h4>
         <p className="text-[#FFFFFF99] md:text-base text-sm text-center max-w-[550px] source-font">

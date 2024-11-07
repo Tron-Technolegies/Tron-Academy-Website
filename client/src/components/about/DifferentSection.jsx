@@ -14,7 +14,7 @@ const items = [
 export default function DifferentSection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-[#FDF8FF] flex flex-col gap-5 items-center">
-      <h4 className="roboto-font md:text-4xl text-2xl font-black">
+      <h4 className="comic-font md:text-4xl text-2xl font-black">
         <span className="text-[#A157DC]">What</span> Makes Us Different
       </h4>
       <p className="inter-font md:text-base text-sm max-w-[700px]">

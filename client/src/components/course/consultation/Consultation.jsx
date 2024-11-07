@@ -14,7 +14,7 @@ export default function Consultation() {
       }}
     >
       <div>
-        <h4 className="roboto-font md:text-4xl text-2xl text-center font-black text-white">
+        <h4 className="comic-font md:text-4xl text-2xl text-center font-black text-white">
           Free Consultation
         </h4>
         <p className="inter-font text-[#E0BEFC] font-medium md:text-lg text-base text-center">

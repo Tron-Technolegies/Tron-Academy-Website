@@ -6,7 +6,7 @@ export default function WhySection() {
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tr from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center text-center relative">
-        <h4 className="roboto-font md:text-4xl text-2xl font-black">
+        <h4 className="comic-font md:text-4xl text-2xl font-black">
           <span className="text-hoverPrimary">Why</span> Tron Academy
         </h4>
         <p className="text-[#5E5E5E] roboto-font font-normal text-sm lg:text-base leading-[22px] max-w-[524px]">
