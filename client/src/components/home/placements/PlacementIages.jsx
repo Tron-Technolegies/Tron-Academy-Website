@@ -7,7 +7,7 @@ export default function PlacementIages({ img, name, style }) {
         src={img}
         className="xl:w-[201px] xl:h-[201px] lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] rounded-full"
       ></img>
-      <p>{name}</p>
+      {/* <p>{name}</p> */}
     </div>
   );
 }

@@ -13,41 +13,41 @@ export default function InstructorsSection() {
     >
       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-x-2 gap-y-5">
         <InstructorCard
-          img={"/instructor1.jpg"}
-          name={"Dilshad"}
-          position={"Designer"}
-        />
-        <InstructorCard
-          img={"/instructor2.jpg"}
-          name={"Shahma"}
-          position={"Designer"}
-        />
-        <InstructorCard
-          img={"/instructor3.jpg"}
-          name={"Jasim"}
-          position={"Digital Marketing"}
-        />
-        <InstructorCard
-          img={"/instructor4.jpg"}
-          name={"Nehla"}
-          position={"Social Media Manager"}
-        />
-        <InstructorCard
-          img={"/instructor5.jpg"}
+          img={"/paaru.jpg"}
           name={"Parvathy"}
           position={"Python Developer"}
         />
         <InstructorCard
-          img={"/instructor6.jpg"}
-          name={"Risan"}
-          position={"Flutter Developer"}
+          img={"/nhala.jpg"}
+          name={"Nahala"}
+          position={"Social Media Specialist"}
+        />
+        <InstructorCard
+          img={"/neha.jpg"}
+          name={"Neha"}
+          position={"Content Marketing"}
+        />
+        <InstructorCard
+          img={"/dil.jpg"}
+          name={"Dilshad"}
+          position={"Graphic Designer"}
+        />
+        <InstructorCard
+          img={"/ashwin.jpg"}
+          name={"Ashwin"}
+          position={"Wordpress Developer"}
+        />
+        <InstructorCard
+          img={"/alex.jpg"}
+          name={"Alex"}
+          position={"SEO Analyst"}
         />
       </div>
       <div className="extra:max-w-[365px] flex flex-col items-center extra:items-start gap-3">
         <h4 className="md:text-4xl text-2xl text-center font-black comic-font">
           <span className="text-hoverPrimary">Our</span> Instructors
         </h4>
-        <p className="text-[#000000BF] text-sm roboto-font text-center">
+        <p className="text-[#000000BF] text-sm roboto-font extra:text-left text-center">
           At Tron Academy, we strive to bring together the best professors for
           the best courses
         </p>

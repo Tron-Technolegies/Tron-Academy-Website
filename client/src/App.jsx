@@ -21,14 +21,14 @@ export default function App() {
           path: "course",
           element: <CoursePage />,
         },
-        {
-          path: "blog",
-          element: <BlogPage />,
-        },
-        {
-          path: "blog/:id",
-          element: <SingleBlogPage />,
-        },
+        // {
+        //   path: "blog",
+        //   element: <BlogPage />,
+        // },
+        // {
+        //   path: "blog/:id",
+        //   element: <SingleBlogPage />,
+        // },
         {
           path: "team",
           element: <TeamPage />,

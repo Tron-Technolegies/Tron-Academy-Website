@@ -17,31 +17,11 @@ export default function PlacementSection() {
         </p>
       </div>
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-y-8 md:my-20">
-        <PlacementIages
-          img={"/p-1.jpg"}
-          name={"Dilshad"}
-          style={"md:-translate-y-16"}
-        />
-        <PlacementIages
-          img={"/p-2.jpg"}
-          name={"Dilshad"}
-          style={"md:translate-y-16"}
-        />
-        <PlacementIages
-          img={"/p-3.jpg"}
-          name={"Dilshad"}
-          style={"md:-translate-y-16"}
-        />
-        <PlacementIages
-          img={"/p-4.jpg"}
-          name={"Dilshad"}
-          style={"md:translate-y-16"}
-        />
-        <PlacementIages
-          img={"/p-5.jpg"}
-          name={"Dilshad"}
-          style={"md:-translate-y-16"}
-        />
+        <PlacementIages img={"/ajith.jpg"} style={"md:-translate-y-16"} />
+        <PlacementIages img={"/rishi.jpg"} style={"md:translate-y-16"} />
+        <PlacementIages img={"/thaara.jpg"} style={"md:-translate-y-16"} />
+        <PlacementIages img={"/fayis.jpg"} style={"md:translate-y-16"} />
+        <PlacementIages img={"/jabir.jpg"} style={"md:-translate-y-16"} />
       </div>
     </div>
   );

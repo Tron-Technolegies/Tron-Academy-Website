@@ -30,7 +30,7 @@ body {
   font-family: "Inter", sans-serif;
 }
 .comic-font {
-  font-family: "Comic Sans MS", cursive;
+  font-family: "Comic Sans MS", "Comic Neue", cursive;
 }
 .source-font {
   font-family: "Source Sans 3", sans-serif;

@@ -6,7 +6,7 @@ export default function CompanySection() {
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-b from-[#F4E3FA]">
       <div className="max-w-[900px] flex flex-col gap-5 items-center mx-auto">
         <h4 className="md:text-4xl text-2xl font-black comic-font text-center">
-          <span className="text-hoverPrimary">Where</span> our students works by
+          <span className="text-hoverPrimary">Where</span> our students work by
           learning
         </h4>
         <p className="md:text-base text-sm inter-font max-w-[900px] text-center">

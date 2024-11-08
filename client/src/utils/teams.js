@@ -1,0 +1,63 @@
+export const teams = [
+  {
+    id: 1,
+    img: "/team/nhala.jpg",
+    role: "Social Media Specialist",
+    name: "Nahala",
+  },
+  {
+    id: 2,
+    img: "/team/paaru.jpg",
+    role: "Python Developer",
+    name: "Parvathy",
+  },
+  { id: 3, img: "/team/alex.jpg", role: "SEO Analyst", name: "Alex Sunny" },
+  { id: 4, img: "/team/neha.jpg", role: "Content Marketing", name: "Neha" },
+  { id: 5, img: "/team/dil.jpg", role: "Graphic Designer", name: "Dilshad" },
+  { id: 6, img: "/team/shahma.jpg", role: "Graphic Designer", name: "Shahma" },
+  {
+    id: 7,
+    img: "/team/ashwin.jpg",
+    role: "Wordpress Developer",
+    name: "Ashwin",
+  },
+  {
+    id: 8,
+    img: "/team/shafikka.jpg",
+    role: "MERN Stack Developer",
+    name: "Mohammad Shafi S",
+  },
+  {
+    id: 9,
+    img: "/team/sb.jpg",
+    role: "Production Head",
+    name: "Faheem",
+  },
+  {
+    id: 10,
+    img: "/team/ajin.jpg",
+    role: "3D Artist",
+    name: "Ajin",
+  },
+  {
+    id: 11,
+    img: "/team/STEPHIN.jpg",
+    role: "VFX Artist",
+    name: "Stephin",
+  },
+  { id: 12, img: "/team/toufi.jpg", role: "Business Analyst", name: "Toufeeq" },
+  { id: 13, img: "/team/jasim.jpg", role: "Digital Marketing", name: "Jasim" },
+  { id: 14, img: "/team/shiju.jpg", role: "UI/UX Designer", name: "Shiju KG" },
+  {
+    id: 15,
+    img: "/team/arshi.jpg",
+    role: "Career Counsellor",
+    name: "Arshidha VP",
+  },
+  {
+    id: 16,
+    img: "/team/risan.jpg",
+    role: "Flutter Developer",
+    name: "Risan PT",
+  },
+];

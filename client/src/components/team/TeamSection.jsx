@@ -1,5 +1,6 @@
 import React from "react";
 import TeamCard from "./TeamCard";
+import { teams } from "../../utils/teams";
 
 export default function TeamSection() {
   return (
@@ -14,19 +15,10 @@ export default function TeamSection() {
         competition. When it comes to making progress, we don't imitate
         trends-we set them.
       </p>
-      <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 z-10 gap-5 my-5">
-        <TeamCard img={"/team/profile-1.jpg"} />
-        <TeamCard img={"/team/profile-2.jpg"} />
-        <TeamCard img={"/team/profile-3.jpg"} />
-        <TeamCard img={"/team/profile-1.jpg"} />
-        <TeamCard img={"/team/profile-2.jpg"} />
-        <TeamCard img={"/team/profile-3.jpg"} />
-        <TeamCard img={"/team/profile-1.jpg"} />
-        <TeamCard img={"/team/profile-2.jpg"} />
-        <TeamCard img={"/team/profile-3.jpg"} />
-        <TeamCard img={"/team/profile-1.jpg"} />
-        <TeamCard img={"/team/profile-2.jpg"} />
-        <TeamCard img={"/team/profile-3.jpg"} />
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 z-10 gap-5 my-5">
+        {teams.map((x) => (
+          <TeamCard key={x.id} img={x.img} name={x.name} role={x.role} />
+        ))}
       </div>
       <img
         src="/team/icon-1.png"

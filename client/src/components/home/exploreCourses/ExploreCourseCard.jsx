@@ -11,7 +11,7 @@ export default function ExploreCourseCard({ icon, name }) {
       <motion.img
         ref={ref}
         src={icon}
-        className="w-[200px] h-[400px] rounded-lg"
+        className="w-[200px] h-[400px] object-cover rounded-lg"
         initial={{ opacity: 0, scale: 0.5 }} // Start with opacity 0 and scale 50% of original size
         animate={isInView ? { opacity: 1, scale: 1 } : {}} // Fade in and scale to 100%
         transition={{
