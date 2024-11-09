@@ -13,7 +13,7 @@ export default function FindCourseSection() {
       <div className="flex flex-col gap-5 items-center my-10">
         <div className="relative">
           <h4 className="comic-font md:text-4xl text-2xl font-black">
-            Find Your Favourite Course
+            Find Your ideal Course
           </h4>
           <img
             src="/courseArrow.png"

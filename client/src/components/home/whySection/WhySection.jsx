@@ -10,8 +10,9 @@ export default function WhySection() {
           <span className="text-hoverPrimary">Why</span> Tron Academy
         </h4>
         <p className="text-[#5E5E5E] roboto-font font-normal text-sm lg:text-base leading-[22px] max-w-[524px]">
-          At Tron Academy, we focus on providing personalized, practical, and
-          results-driven learning experiences. Here’s why you should choose us:
+          At TRON Academy, we don’t just teach—you learn the skills that
+          guarantee your job-ready from day one.If you want to stand out, this
+          is where you belong.Here’s why you should choose us:
         </p>
         <motion.img
           src="/robot.png"
@@ -41,7 +42,7 @@ export default function WhySection() {
           <WhyDetailElt
             title={"Portfolio Building"}
             content={
-              "At Tron Academy, we help you achieve that. You’ll leave with not just    a certificate but a portfolio that shows exactly where your strength lies."
+              "At Tron Academy, we help you achieve that. You’ll leave with not just a certificate but a portfolio that shows exactly where your strength lies."
             }
           />
           <WhyDetailElt
@@ -55,7 +56,7 @@ export default function WhySection() {
 
         <div className="flex flex-col gap-10 mt-10 lg:mt-0">
           <WhyDetailElt
-            title={"100% Job Support"}
+            title={"Placement support"}
             content={
               "We guarantee placement in our coding and digital marketing programs, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success."
             }

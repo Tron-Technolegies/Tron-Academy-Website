@@ -5,8 +5,7 @@ export default function SisterSection() {
   return (
     <div className="lg:px-[120px] lg:py-20 px-10 py-5">
       <div className="comic-font max-w-[816px] flex flex-col gap-5 mx-auto items-center">
-        <h4 className="md:text-4xl text-2xl font-semibold text-center">{`“Our sister companies,
-Our Digital Partners’’`}</h4>
+        <h4 className="md:text-4xl text-2xl font-semibold text-center">{`“Tron : Your Success Partners’’`}</h4>
         <p className="md:text-base text-sm text-center inter-font">
           Tron isn’t just a place to learn; it’s where ambition meets
           opportunity across all digital fields. With branches like Tron
