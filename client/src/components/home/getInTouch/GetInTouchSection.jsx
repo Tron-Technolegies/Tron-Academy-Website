@@ -43,7 +43,7 @@ export default function GetInTouchSection() {
           />
           <FormSelect
             title={"What Course are you interested in"}
-            list={["Coding", "Multimedia", "Digital Coding"]}
+            list={["Coding", "Multimedia", "Digital Marketing"]}
             value={course}
             onchange={(e) => setCourse(e.target.value)}
           />

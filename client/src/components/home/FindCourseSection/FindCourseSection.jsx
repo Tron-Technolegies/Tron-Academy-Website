@@ -25,11 +25,11 @@ export default function FindCourseSection() {
           <input
             type="text"
             placeholder="search your course.."
-            className="bg-[#f7f4f4] px-4 py-3 rounded-lg lg:w-1/3 sm:w-1/2 w-4/5"
+            className="bg-[#f8ddf7] px-4 py-3 rounded-lg lg:w-1/3 sm:w-1/2 w-4/5 placeholder-[#dba9ed]"
           ></input>
           <button
             onClick={() => navigate("/course")}
-            className="text-3xl p-2 bg-[#f7f4f4] rounded-lg"
+            className="text-3xl p-2 bg-[#f8ddf7] rounded-lg"
           >
             <IoIosSearch />
           </button>

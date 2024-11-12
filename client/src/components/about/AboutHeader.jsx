@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function AboutHeader() {
   return (
     <div
-      className="lg:px-[120px] lg:py-20 px-10 py-5 bg-center flex lg:flex-row flex-col gap-10 justify-between items-center relative"
+      className="lg:px-[120px] lg:py-20 px-10 py-5 landing-height bg-center flex lg:flex-row flex-col gap-10 justify-between items-center relative"
       style={{ backgroundImage: `url('/about/about-bg.png')` }}
     >
       <div className="flex flex-col gap-20 max-w-[700px] justify-start">

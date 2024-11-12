@@ -47,9 +47,7 @@ export default function WhyStatsSection() {
           </div>
         ))}
       </div>
-      <p className="text-[#A157DC] md:text-[15px] text-sm text-center font-medium">
-        So why wait? Start your journey with the world's leading experts today!
-      </p>
+
       <motion.img
         src="/about/robot-2.png"
         className="absolute md:w-[88px] md:h-[92px] w-[40px] h-[42px] sm:top-10 sm:right-10 right-0"
