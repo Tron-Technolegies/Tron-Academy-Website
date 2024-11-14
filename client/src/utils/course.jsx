@@ -88,16 +88,11 @@ export const digitalCourses = [
 ];
 
 export const codingCourses = [
-  { id: 1, name: "Basic MERN STACK Development", months: "3 Months" },
-  { id: 2, name: "Advanced MERN STACK Development", months: "6 Months" },
-  { id: 3, name: "Basic Python-Django Development", months: "3 Months" },
-  { id: 4, name: "Advanced Python-Django Development", months: "6 Months" },
-  { id: 5, name: "Basic Flutter APP Development", months: "3 Months" },
-  { id: 6, name: "Advanced Flutter APP Development", months: "6 Months" },
-  { id: 7, name: "Basic Data Science", months: "3 Months" },
-  { id: 8, name: "Advanced Data Science", months: "6 Months" },
-  { id: 9, name: "Basic WordPress Development", months: "3 Months" },
-  { id: 10, name: "Advanced WordPress Development", months: "6 Months" },
+  { id: 1, name: "MERN STACK Development", months: "6 Months" },
+  { id: 2, name: "Python-Django Development", months: "6 Months" },
+  { id: 3, name: "Flutter APP Development", months: "6 Months" },
+  { id: 4, name: "Data Science", months: "6 Months" },
+  { id: 5, name: "WordPress Development", months: "6 Months" },
 ];
 
 export const multimediaCourses = [
