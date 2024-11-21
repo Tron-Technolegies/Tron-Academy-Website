@@ -7,10 +7,16 @@ function FooterContactSection() {
     <div className="flex flex-col gap-5">
       <h1 className="font-bold">CONTACT US</h1>
       <div className="flex flex-col gap-2">
-        <FooterContactElt
-          icon={<CiLocationOn />}
-          content={"Based in Abu Dhabi, UAE"}
-        />
+        <a
+          className="cursor-pointer"
+          href="https://maps.app.goo.gl/5ZbE7jT7BmYdPzPH7"
+          target="_blank"
+        >
+          <FooterContactElt
+            icon={<CiLocationOn />}
+            content={"Based in Chavakkad, Thrissur"}
+          />
+        </a>
         <FooterContactElt
           icon={<CiMail />}
           content={"tronacademyckd@gmail.com"}
