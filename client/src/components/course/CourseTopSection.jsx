@@ -28,6 +28,20 @@ export default function CourseTopSection() {
           and practical knowledge for success in the digital world.
         </p>
       </div>
+      <div className="flex md:flex-row flex-col items-center gap-10 justify-center my-10">
+        {buttonNames.map((x, index) => (
+          <button
+            className={`px-4 py-2 flex gap-3 w-[280px] lg:text-base text-sm justify-center items-center inter-font font-semibold rounded-lg hover:bg-[#B277F3] hover:scale-110 hover:text-white hover-animation shadow-md ${
+              active === x ? "bg-[#B277F3] text-white" : "bg-[#FAEFFF]"
+            }`}
+            onClick={() => setActive(x)}
+            key={index}
+          >
+            {x?.toUpperCase()}
+            <span>{active === x ? <IoIosArrowUp /> : <IoIosArrowDown />}</span>
+          </button>
+        ))}
+      </div>
       <div className="flex justify-between items-start">
         <motion.img
           src="/course/icon-2.png"
@@ -102,24 +116,8 @@ export default function CourseTopSection() {
           />
         )}
       </div>
-      <div className="max-w-[900px] mx-auto">
-        <div className="flex md:flex-row flex-col items-center gap-10 justify-center my-10">
-          {buttonNames.map((x, index) => (
-            <button
-              className={`px-4 py-2 flex gap-3 w-[280px] lg:text-base text-sm justify-center items-center inter-font font-semibold rounded-lg hover:bg-[#B277F3] hover:scale-110 hover:text-white hover-animation shadow-md ${
-                active === x ? "bg-[#B277F3] text-white" : "bg-[#FAEFFF]"
-              }`}
-              onClick={() => setActive(x)}
-              key={index}
-            >
-              {x?.toUpperCase()}
-              <span>
-                {active === x ? <IoIosArrowUp /> : <IoIosArrowDown />}
-              </span>
-            </button>
-          ))}
-        </div>
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 justify-items-center">
+      <div className="max-w-[900px] flex justify-center mx-auto my-5">
+        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-content-center mx-auto">
           {active === "Digital Marketing" &&
             digitalCourses.map((x) => (
               <CourseCard key={x.id} name={x.name} months={x.months} />

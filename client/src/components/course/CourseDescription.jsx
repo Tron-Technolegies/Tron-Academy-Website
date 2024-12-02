@@ -45,7 +45,7 @@ export default function CourseDescription({
       </p>
       <div className="bg-[#FAEFFF] grid grid-cols-3 gap-3 place-items-center justify-items-center w-screen p-3 ">
         {points.map((x, index) => (
-          <div key={index} className="">
+          <div key={index} className="bg-[#e5ccf1] px-3 py-1 rounded-md">
             <p className="inter-font text-[#33009E] text-center md:text-base text-sm font-semibold">
               {x}
             </p>

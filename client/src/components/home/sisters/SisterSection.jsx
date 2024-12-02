@@ -14,7 +14,7 @@ export default function SisterSection() {
           that are crucial for success.
         </p>
       </div>
-      <div className="grid md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-14 justify-center mb-10 mt-20">
+      <div className="grid md:grid-cols-4 grid-cols-2 gap-14 justify-center mb-10 mt-20">
         <SisterElt img={"/sister-4.png"} />
         <SisterElt img={"/sister-3.png"} />
         <SisterElt img={"/sister-2.png"} />
