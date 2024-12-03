@@ -106,8 +106,13 @@ body {
   min-height: calc(100vh - 100px);
 }
 
-@media (max-width: 640px){
+@media (max-width: 640px) {
   .landing-height {
     min-height: calc(100vh - 70px);
+  }
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .slick-slider {
+    transform: translate3d(0, 0, 0);
   }
 }

@@ -15,10 +15,30 @@ export default function SisterSection() {
         </p>
       </div>
       <div className="grid md:grid-cols-4 grid-cols-2 gap-14 justify-center mb-10 mt-20">
-        <SisterElt img={"/sister-4.png"} />
-        <SisterElt img={"/sister-3.png"} />
-        <SisterElt img={"/sister-2.png"} />
-        <SisterElt img={"/sister-1.png"} />
+        <SisterElt
+          img={"/sister-4.png"}
+          href={
+            "https://www.instagram.com/tronsocial?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          }
+        />
+        <SisterElt
+          img={"/sister-3.png"}
+          href={
+            "https://www.instagram.com/trontechnologies_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          }
+        />
+        <SisterElt
+          img={"/sister-2.png"}
+          href={
+            "https://www.instagram.com/tronmarketing?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          }
+        />
+        <SisterElt
+          img={"/sister-1.png"}
+          href={
+            "https://www.instagram.com/tronstudio_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          }
+        />
       </div>
     </div>
   );

@@ -29,13 +29,13 @@ export default function AboutHeader() {
             <div className="flex gap-2 items-center">
               <p className="md:text-[32px] text-[20px] font-semibold">5/5</p>
               <p className="md:text-[15px] text-[12px] max-w-[75px]">
-                Client Happiness
+                Student Happiness
               </p>
             </div>
             <div className="flex gap-2 items-center">
               <p className="md:text-[32px] text-[20px] font-semibold">700+</p>
               <p className="md:text-[15px] text-[12px] max-w-[75px]">
-                Projects Completed
+                Lectures Completed
               </p>
             </div>
           </div>

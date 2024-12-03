@@ -43,14 +43,17 @@ export default function CourseDescription({
       <p className="max-w-[800px] text-center md:text-base text-sm inter-font text-[#081330]">
         {desc}
       </p>
-      <div className="bg-[#FAEFFF] grid grid-cols-3 gap-3 place-items-center justify-items-center w-screen p-3 ">
-        {points.map((x, index) => (
-          <div key={index} className="bg-[#e5ccf1] px-3 py-1 rounded-md">
-            <p className="inter-font text-[#33009E] text-center md:text-base text-sm font-semibold">
+      <div className="bg-[#FAEFFF] w-screen py-3 lg:px-[120px] px-10">
+        <div className="grid sm:grid-cols-2 grid-cols-1 gap-5 ">
+          {points?.map((x, index) => (
+            <p
+              key={index}
+              className=" bg-[#e5ccf1] px-3 py-1 rounded-md w-[360px]inter-font text-[#33009E] text-center md:text-base text-sm font-semibold"
+            >
               {x}
             </p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </div>
   );

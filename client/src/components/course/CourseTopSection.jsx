@@ -103,7 +103,7 @@ export default function CourseTopSection() {
             img={coding.img}
             imgtitle={coding.imgTitle}
             desc={coding.desc}
-            points={coding.points}
+            // points={coding.points}
           />
         )}
         {active === "Multimedia" && (
@@ -112,7 +112,7 @@ export default function CourseTopSection() {
             img={multiMedia.img}
             imgtitle={multiMedia.imgTitle}
             desc={multiMedia.desc}
-            points={multiMedia.points}
+            // points={multiMedia.points}
           />
         )}
       </div>

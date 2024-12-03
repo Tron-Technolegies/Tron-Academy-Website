@@ -21,6 +21,7 @@ export default function CompanyCarousel() {
     speed: 500,
     slidesToShow: 4, // Number of slides to show at a time
     slidesToScroll: 1,
+    centerMode: true,
     autoplay: true, // Enable autoplay
     autoplaySpeed: 2000, // Autoplay interval (2 seconds)
 
@@ -50,7 +51,7 @@ export default function CompanyCarousel() {
       {url.map((x, index) => (
         <div
           key={index}
-          className="flex justify-center items-center mx-auto place-items-center"
+          className="flex justify-center px-12 items-center mx-auto place-items-center"
         >
           <img src={x} className="w-[150px] object-cover" />
         </div>
