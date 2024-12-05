@@ -116,22 +116,26 @@ export default function CourseTopSection() {
           />
         )}
       </div>
-      <div className="max-w-[900px] flex justify-center mx-auto my-5">
-        <div className="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-content-center mx-auto">
-          {active === "Digital Marketing" &&
-            digitalCourses.map((x) => (
-              <CourseCard key={x.id} name={x.name} months={x.months} />
-            ))}
-          {active === "Coding" &&
-            codingCourses.map((x) => (
-              <CourseCard key={x.id} name={x.name} months={x.months} />
-            ))}
-          {active === "Multimedia" &&
-            multimediaCourses.map((x) => (
-              <CourseCard key={x.id} name={x.name} months={x.months} />
-            ))}
-        </div>
+      {/* <div className="max-w-[900px] flex justify-center mx-auto my-5"> */}
+      <div className="max-w-[600px] my-5 grid sm:grid-cols-2 grid-cols-1 gap-10 place-content-center justify-items-center mx-auto ">
+        {active === "Digital Marketing" &&
+          digitalCourses.map((x) => (
+            <CourseCard key={x.id} name={x.name} months={x.months} />
+          ))}
       </div>
+      <div className="max-w-[900px] my-5 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-content-center justify-items-center mx-auto ">
+        {active === "Coding" &&
+          codingCourses.map((x) => (
+            <CourseCard key={x.id} name={x.name} months={x.months} />
+          ))}
+      </div>
+      <div className="max-w-[900px] my-5 grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 place-content-center justify-items-center mx-auto ">
+        {active === "Multimedia" &&
+          multimediaCourses.map((x) => (
+            <CourseCard key={x.id} name={x.name} months={x.months} />
+          ))}
+      </div>
+      {/* </div> */}
       <motion.img
         src="/course/icon-3.png"
         className="w-[116px] h-[58px]"

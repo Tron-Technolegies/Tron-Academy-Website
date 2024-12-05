@@ -33,9 +33,9 @@ export default function AboutHeader() {
               </p>
             </div>
             <div className="flex gap-2 items-center">
-              <p className="md:text-[32px] text-[20px] font-semibold">700+</p>
+              <p className="md:text-[32px] text-[20px] font-semibold">20+</p>
               <p className="md:text-[15px] text-[12px] max-w-[75px]">
-                Lectures Completed
+                Batches Completed
               </p>
             </div>
           </div>
