@@ -102,3 +102,39 @@ export const multimediaCourses = [
   { id: 4, name: "VFX Advanced", months: "4 Months" },
   { id: 5, name: "VFX Basic", months: "2 Months" },
 ];
+
+export const codingArray = [
+  "mern",
+  "python",
+  "django",
+  "flutter",
+  "app",
+  "web",
+  "fullstack",
+  "frontend",
+  "backend",
+  "coding",
+  "webdevelopment",
+  "datascience",
+  "powerbi",
+  "stack",
+];
+
+export const multimediaArray = [
+  "vfx",
+  "multimedia",
+  "graphicdesign",
+  "production",
+  "postproduction",
+  "design",
+  "ui",
+  "ux",
+];
+
+export const digialArray = [
+  "digitalmarketing",
+  "content",
+  "seo",
+  "searchengine",
+  "socialmedia",
+];

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 import CourseDescription from "./CourseDescription";
 
@@ -12,11 +12,12 @@ import {
   multimediaCourses,
 } from "../../utils/course";
 import { motion } from "framer-motion";
+import { CourseContext } from "../../CourseContext";
 
 const buttonNames = ["Digital Marketing", "Coding", "Multimedia"];
 
 export default function CourseTopSection() {
-  const [active, setActive] = useState("Digital Marketing");
+  const { active, setActive } = useContext(CourseContext);
   return (
     <div className="bg-[#FDFAFE] lg:px-[120px] lg:py-10 px-10 py-5">
       <div className="flex flex-col gap-3 mx-auto items-center text-center max-w-[550px]">

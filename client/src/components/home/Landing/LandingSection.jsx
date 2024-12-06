@@ -71,6 +71,7 @@ export default function LandingSection() {
         </motion.button>
         <motion.img
           src="/landing-icon1.png"
+          draggable={false}
           className="absolute bottom-0 md:left-6 left-0 lg:w-[414px] object-cover w-[200px]"
           initial={{ scale: 0.2, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}
@@ -78,6 +79,7 @@ export default function LandingSection() {
         ></motion.img>
         <motion.img
           src="/landing-icon2.png"
+          draggable={false}
           className="absolute right-0 top-0 lg:w-[256px] object-cover w-[150px]"
           initial={{ scale: 0.2, opacity: 0 }}
           whileInView={{ scale: 1, opacity: 1 }}

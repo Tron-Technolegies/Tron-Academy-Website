@@ -1,13 +1,48 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { FaUsers } from "react-icons/fa6";
 import { RiPresentationFill } from "react-icons/ri";
 import { FaHandshakeSimple } from "react-icons/fa6";
 import { IoIosSearch } from "react-icons/io";
 import DetailCard from "./DetailCard";
 import { useNavigate } from "react-router-dom";
+import { CourseContext } from "../../../CourseContext";
+import {
+  codingArray,
+  digialArray,
+  multimediaArray,
+} from "../../../utils/course";
 
 export default function FindCourseSection() {
   const navigate = useNavigate();
+  const [search, setSearch] = useState("");
+  const { setActive } = useContext(CourseContext);
+
+  function handleClick() {
+    const isCoding = codingArray.some((x) =>
+      x.toLowerCase().includes(search.replace(/\s+/g, ""))
+    );
+    const isMulti = multimediaArray.some((x) =>
+      x.toLowerCase().includes(search.replace(/\s+/g, ""))
+    );
+    const isDigital = digialArray.some((x) =>
+      x.toLowerCase().includes(search.replace(/\s+/g, ""))
+    );
+    if (isCoding) {
+      navigate("/course");
+      setActive("Coding");
+      return;
+    }
+    if (isMulti) {
+      navigate("/course");
+      setActive("Multimedia");
+      return;
+    }
+    if (isDigital) {
+      navigate("/course");
+      setActive("Digital Marketing");
+      return;
+    }
+  }
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5%">
       <div className="flex flex-col gap-5 items-center my-10">
@@ -25,10 +60,12 @@ export default function FindCourseSection() {
           <input
             type="text"
             placeholder="search your course.."
+            value={search}
+            onChange={(e) => setSearch(e.target.value.toLowerCase())}
             className="bg-[#f8ddf7] px-4 py-3 rounded-lg lg:w-1/3 sm:w-1/2 w-4/5 placeholder-[#dba9ed]"
           ></input>
           <button
-            onClick={() => navigate("/course")}
+            onClick={handleClick}
             className="text-3xl p-2 bg-[#f8ddf7] rounded-lg"
           >
             <IoIosSearch />
