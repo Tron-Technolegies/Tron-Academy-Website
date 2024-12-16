@@ -12,6 +12,7 @@ import CelebrationSection from "../../components/home/celebrations/CelebrationSe
 import ReviewSection from "../../components/home/review/ReviewSection";
 import GetInTouchSection from "../../components/home/getInTouch/GetInTouchSection";
 import FaqSection from "../../components/home/faq/FaqSection";
+import Helmet from "react-helmet";
 
 export default function HomePage() {
   useEffect(() => {
@@ -19,6 +20,17 @@ export default function HomePage() {
   }, []);
   return (
     <div>
+      <Helmet>
+        <title>
+          Digital Marketing, Multi-Media & Full-Stack Training in Kerala
+        </title>
+        <meta
+          name="description"
+          content="Join top digital marketing training in Kerala, the best multi-media course, and expert
+full-stack developer training in Thrissur for a bright career ahead"
+        />
+        <meta name="keywords" content="" />
+      </Helmet>
       <LandingSection />
       <FindCourseSection />
       <WhySection />
