@@ -29,7 +29,10 @@ export default function HomePage() {
           content="Join top digital marketing training in Kerala, the best multi-media course, and expert
 full-stack developer training in Thrissur for a bright career ahead"
         />
-        <meta name="keywords" content="" />
+        <meta
+          name="keywords"
+          content="digital marketing academy, online digital marketing course, best online marketing courses, digital marketing course"
+        />
       </Helmet>
       <LandingSection />
       <FindCourseSection />
