@@ -28,12 +28,12 @@ export default function Header() {
         >
           Course
         </NavLink>
-        {/* <NavLink
+        <NavLink
           to={"/blog"}
           className="hover-navlink hover-animation hover:drop-shadow-navlink"
         >
           Blog
-        </NavLink> */}
+        </NavLink>
         <NavLink
           to={"/team"}
           className="hover-navlink hover-animation hover:drop-shadow-navlink"

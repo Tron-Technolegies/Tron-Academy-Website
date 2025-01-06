@@ -1,5 +1,6 @@
 import React from "react";
 import BlogCard from "./BlogCard";
+import { allBlogs } from "../../utils/blogs";
 
 export default function BlogSection() {
   return (
@@ -22,17 +23,15 @@ export default function BlogSection() {
       </div>
       <div className="relative">
         <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-5 my-5">
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
-          <BlogCard />
+          {allBlogs.map((x) => (
+            <BlogCard
+              key={x.id}
+              id={x.id}
+              image={x.image}
+              heading={x.title}
+              date={x.date}
+            />
+          ))}
         </div>
         <img
           src="/blog/bottom-bg.png"

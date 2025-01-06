@@ -20,13 +20,13 @@ export default function SmallHeader({ setSmallBar }) {
         >
           Course
         </NavLink>
-        {/* <NavLink
+        <NavLink
           to={"/blog"}
           className={"border-b w-full py-2 border-hoverPrimary"}
           onClick={() => setSmallBar(false)}
         >
           Blog
-        </NavLink> */}
+        </NavLink>
         <NavLink
           to={"/team"}
           className={"border-b w-full py-2 border-hoverPrimary"}
