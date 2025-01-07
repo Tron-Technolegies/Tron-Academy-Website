@@ -9,7 +9,7 @@ export default function SingleBlogHeader({ data }) {
       {/* <p>with our comprehensive diploma program. Learn the fundamentals </p> */}
       <img
         src={data?.image}
-        className="lg:w-[1020px] lg:h-[520px] rounded-xl"
+        className="lg:w-[1020px] lg:h-[520px] object-cover rounded-xl"
       ></img>
     </div>
   );
