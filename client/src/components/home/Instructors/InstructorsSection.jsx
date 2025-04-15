@@ -34,8 +34,8 @@ export default function InstructorsSection() {
         />
         <InstructorCard
           img={"/ashwin.jpg"}
-          name={"Ashwin"}
-          position={"Wordpress Developer"}
+          name={"Aswin"}
+          position={"Front-End Developer"}
         />
         <InstructorCard
           img={"/alex.jpg"}

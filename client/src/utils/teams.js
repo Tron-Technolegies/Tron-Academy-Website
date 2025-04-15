@@ -18,8 +18,8 @@ export const teams = [
   {
     id: 7,
     img: "/team/ashwin.jpg",
-    role: "Wordpress Developer",
-    name: "Ashwin",
+    role: "Front-End Developer",
+    name: "Aswin",
   },
   {
     id: 8,
