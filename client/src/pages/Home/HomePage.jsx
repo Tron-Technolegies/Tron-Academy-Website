@@ -22,7 +22,7 @@ export default function HomePage() {
     <div>
       <Helmet>
         <title>
-          Digital Marketing, Multi-Media & Full-Stack Training in Kerala
+        Digital Marketing, Multi-Media & Full-Stack Training in Kerala
         </title>
         <meta
           name="description"
