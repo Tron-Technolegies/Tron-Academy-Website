@@ -13,6 +13,7 @@ import ReviewSection from "../../components/home/review/ReviewSection";
 import GetInTouchSection from "../../components/home/getInTouch/GetInTouchSection";
 import FaqSection from "../../components/home/faq/FaqSection";
 import Helmet from "react-helmet";
+import FoundersNote from "../../components/home/foundersNote/FoundersNote";
 
 export default function HomePage() {
   useEffect(() => {
@@ -38,7 +39,8 @@ full-stack developer training in Thrissur for a bright career ahead"
       <FindCourseSection />
       <WhySection />
       <ExploreCourseSection />
-      <InstructorsSection />
+      {/* <InstructorsSection /> */}
+      <FoundersNote />
       <PortfolioSection />
       <PlacementSection />
       <SisterSection />

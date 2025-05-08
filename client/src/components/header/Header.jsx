@@ -1,11 +1,27 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { RxHamburgerMenu } from "react-icons/rx";
-import SmallHeader from "./SmallHeader";
+import { IoIosArrowDown } from "react-icons/io";
 import { handleChatClick } from "../../utils/whatsApp";
 
 export default function Header() {
   const [showSmallBar, setShowSmallBar] = useState(false);
+  const [showCourseDropdown, setShowCourseDropdown] = useState(false);
+  const dropdownRef = useRef(null);
+
+  useEffect(() => {
+    function handleClickOutside(event) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+        setShowCourseDropdown(false);
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <header className="lg:px-[120px] px-10 sm:py-5 py-2 sm:h-[100px] h-[70px] shadow-sm lg:py-10 flex justify-between items-center bg-white z-50">
       <Link to={"/"} className="flex gap-3 items-center">
@@ -22,12 +38,47 @@ export default function Header() {
         >
           Home
         </NavLink>
-        <NavLink
-          to={"/course"}
-          className="hover-navlink hover-animation hover:drop-shadow-navlink"
-        >
-          Course
-        </NavLink>
+
+        <div className="relative" ref={dropdownRef}>
+          <div
+            className="flex items-center gap-1 cursor-pointer hover-navlink hover-animation hover:drop-shadow-navlink"
+            onClick={() => setShowCourseDropdown(!showCourseDropdown)}
+          >
+            <span>Course</span>
+            <IoIosArrowDown
+              className={`transition-transform ${
+                showCourseDropdown ? "rotate-180" : ""
+              }`}
+            />
+          </div>
+
+          {showCourseDropdown && (
+            <div className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-md py-2 w-40 z-50">
+              <NavLink
+                to="/coding"
+                className="block px-4 py-2 hover:bg-gray-100 text-base"
+                onClick={() => setShowCourseDropdown(false)}
+              >
+                Coding
+              </NavLink>
+              <NavLink
+                to="/digitalmarketing"
+                className="block px-4 py-2 hover:bg-gray-100 text-base"
+                onClick={() => setShowCourseDropdown(false)}
+              >
+                Digital Marketing
+              </NavLink>
+              <NavLink
+                to="/multimedia"
+                className="block px-4 py-2 hover:bg-gray-100 text-base"
+                onClick={() => setShowCourseDropdown(false)}
+              >
+                Multimedia
+              </NavLink>
+            </div>
+          )}
+        </div>
+
         <NavLink
           to={"/blog"}
           className="hover-navlink hover-animation hover:drop-shadow-navlink"

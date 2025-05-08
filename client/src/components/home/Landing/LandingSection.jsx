@@ -1,13 +1,14 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { handleChatClick } from "../../../utils/whatsApp";
 import { motion, useInView, useAnimation } from "framer-motion";
+import ContactPopup from "../../ContactPopup";
 
 export default function LandingSection() {
   const controls = useAnimation();
   const spanControls = useAnimation();
   const ref = useRef(null);
   const isInView = useInView(ref, { once: false });
+  const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     if (isInView) {
@@ -26,13 +27,21 @@ export default function LandingSection() {
             .then(() => {
               // After rotation completes, tilt on the z-axis
               spanControls.start({
-                rotateZ: [0, 15, 0], // Tilt to 45 degrees and back
+                rotateZ: [0, 15, 0], // Tilt to 15 degrees and back
                 transition: { duration: 2.5, ease: "easeInOut" },
               });
             });
         });
     }
   }, [controls, spanControls, isInView]);
+
+  const handleEnrollClick = () => {
+    setShowPopup(true);
+  };
+
+  const handleClosePopup = () => {
+    setShowPopup(false);
+  };
 
   return (
     <div
@@ -56,15 +65,16 @@ export default function LandingSection() {
             <img src="/underline.png" className="absolute"></img>
           </motion.h2>
         </motion.h1>
+        <p className="font-medium text-center ">Ready to take the first step? Let’s make it happen</p>
         <motion.button
-          onClick={() => handleChatClick(`enroll in Tron Academy`)}
+          onClick={handleEnrollClick}
           initial={{ scale: 1 }}
           whileHover={{ scale: 1.1, backgroundColor: "#CA90F2" }} // Change color on hover
           whileTap={{ scale: 0.9 }}
           transition={{ type: "spring", stiffness: 300 }} // Smooth animation
           className="flex items-center gap-3 bg-black text-white px-4 py-2 rounded-lg"
         >
-          Enroll Now
+          Book A Free Consultation
           <span>
             <MdKeyboardArrowRight />
           </span>
@@ -86,6 +96,8 @@ export default function LandingSection() {
           transition={{ duration: 1, ease: "easeOut" }}
         ></motion.img>
       </div>
+      
+      {showPopup && <ContactPopup onClose={handleClosePopup} />}
     </div>
   );
 }

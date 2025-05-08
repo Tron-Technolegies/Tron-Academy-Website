@@ -8,6 +8,9 @@ import BlogPage from "./pages/blog/BlogPage";
 import TeamPage from "./pages/team/TeamPage";
 import AboutPage from "./pages/about/AboutPage";
 import SingleBlogPage from "./pages/blog/SingleBlogPage";
+import CodingPage from "./pages/coding/CodingPage";
+import DigitalmarketingPage from "./pages/digitalmarketing/DigitalmarketingPage";
+import MultimediaPage from "./pages/multimedia/MultimediaPage";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -37,6 +40,18 @@ export default function App() {
           path: "about",
           element: <AboutPage />,
         },
+        {
+          path : "coding",
+          element : <CodingPage/>
+        },
+        {
+          path: "digitalmarketing",
+          element : <DigitalmarketingPage/>
+        },
+        {
+          path : "multimedia",
+          element : <MultimediaPage/>
+        }
       ],
     },
   ]);

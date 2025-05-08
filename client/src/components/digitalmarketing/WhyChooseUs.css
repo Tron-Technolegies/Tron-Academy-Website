@@ -1,0 +1,60 @@
+.why_choose_us_container {
+    padding: 60px 20px;
+    background-color: #f9f9ff;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .why_choose_us_contents {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .main_title_color {
+    color: #9370DB;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  
+  .why_choose_us_contents h3 {
+    color: #000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+  
+  .why_choose_us_contents p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .choose_us_icon {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .choose_us_icon img {
+    max-width: 120px;
+    height: auto;
+  }
+  
+  /* For mobile responsiveness */
+  @media (max-width: 768px) {
+    .choose_us_icon {
+      position: static;
+      margin-top: 30px;
+      transform: none;
+    }
+  }
