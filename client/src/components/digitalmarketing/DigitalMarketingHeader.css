@@ -1,4 +1,4 @@
-.dm_header_container {
+.header_container  {
   height: 100vh;
   width: 100%;
   position: relative;
@@ -9,7 +9,8 @@
   overflow: hidden;
 }
 
-.dm_header_container::before {
+
+.header_container::before {
   content: "";
   position: absolute;
   top: 0;
@@ -23,7 +24,7 @@
   z-index: 0;
 }
 
-.dm_header_contents {
+.header_contents {
   position: relative;
   z-index: 2;
   width: 70%;
@@ -32,12 +33,12 @@
   padding: 2rem 0;
 }
 
-.dm_header_text {
+.header_text {
   width: 82%;
   margin: 0 auto;
 }
 
-.dm_header_contents h1 {
+.header_contents h1 {
   color: #000000;
   font-weight: 700;
   font-size: 2.5rem;
@@ -49,7 +50,7 @@
   color: #b277f3;
 }
 
-.dm_header_contents p {
+.header_contents p {
   color: #333333;
   font-size: 1.1rem;
   margin-bottom: 2rem;
@@ -57,7 +58,7 @@
   font-weight: 500;
 }
 
-.dm_cta_button {
+.cta_button {
   background-color: #b277f3;
   color: white;
   border: none;
@@ -69,14 +70,14 @@
   transition: all 0.3s ease;
 }
 
-.dm_cta_button:hover {
+.cta_button:hover {
   background-color: #9a5de0;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(178, 119, 243, 0.3);
 }
 
 /*icons*/
-.dm_accent_triangle {
+.accent_triangle {
   position: absolute;
   width: 0;
   height: 0;
@@ -98,7 +99,7 @@
   border-color: transparent transparent #b277f3 transparent;
 }
 
-.dm_accent_circle {
+.accent_circle {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -112,48 +113,48 @@
   justify-content: center;
 }
 
-.dm_accent_circle::after {
+.accent_circle::after {
   content: "→";
   color: #333;
   font-size: 1.5rem;
 }
 
-/* Responsive adjustments */
+/* mediaQueries */
 @media (max-width: 1200px) {
-  .dm_header_contents {
+  .header_contents {
     width: 80%;
   }
 }
 
 @media (max-width: 768px) {
-  .dm_header_contents {
+  .header_contents {
     width: 90%;
   }
-
-  .dm_header_text {
+  
+  .header_text {
     width: 95%;
   }
-
-  .dm_header_contents h1 {
+  
+  .header_contents h1 {
     font-size: 2rem;
   }
-
-  .dm_accent_triangle,
-  .dm_accent_circle {
+  
+  .accent_triangle,
+  .accent_circle {
     transform: scale(0.8);
   }
 }
 
 @media (max-width: 480px) {
-  .dm_header_contents h1 {
+  .header_contents h1 {
     font-size: 1.5rem;
   }
-
-  .dm_header_contents p {
+  
+  .header_contents p {
     font-size: 0.9rem;
   }
-
-  .dm_cta_button {
+  
+  .cta_button {
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
   }

@@ -1,0 +1,88 @@
+const studentsProjects = [
+  {
+    id: 1,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project1.jpg",
+    category: "web",
+    studentName: "Alex Johnson",
+  },
+  {
+    id: 2,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project2.jpg",
+    category: "web",
+    studentName: "Sophia Martinez",
+  },
+  {
+    mulid: 3,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project3.jpg",
+    category: "web",
+    studentName: "Michael Chen",
+  },
+  {
+    id: 4,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project4.jpg",
+    category: "web",
+    studentName: "Emma Wilson",
+  },
+  {
+    id: 5,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project5.jpg",
+    category: "web",
+    studentName: "James Peterson",
+  },
+  {
+    id: 6,
+    title: "Revenue tracking website for Shopify",
+    image: "/images/projects/project6.jpg",
+    category: "web",
+    studentName: "Olivia Taylor",
+  },
+  {
+    id: 7,
+    title: "Interactive 3D animation for product showcase",
+    image: "/images/projects/project7.jpg",
+    category: "multimedia",
+    studentName: "Liam Garcia",
+  },
+  {
+    id: 8,
+    title: "Short film with motion graphics",
+    image: "/images/projects/project8.jpg",
+    category: "multimedia",
+    studentName: "Isabella Rodriguez",
+  },
+  {
+    id: 9,
+    title: "Augmented reality app for art gallery",
+    image: "/images/projects/project9.jpg",
+    category: "multimedia",
+    studentName: "Noah Lee",
+  },
+  {
+    id: 10,
+    title: "Virtual reality museum tour",
+    image: "/images/projects/project10.jpg",
+    category: "multimedia",
+    studentName: "Ava Thompson",
+  },
+  {
+    id: 11,
+    title: "Interactive audio-visual installation",
+    image: "/images/projects/project11.jpg",
+    category: "multimedia",
+    studentName: "Ethan Brown",
+  },
+  {
+    id: 12,
+    title: "360-degree video for travel campaign",
+    image: "/images/projects/project12.jpg",
+    category: "multimedia",
+    studentName: "Mia Davis",
+  },
+];
+
+export default studentsProjects;

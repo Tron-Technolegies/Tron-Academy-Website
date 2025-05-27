@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { popupFormEnquiry } from '../utils/whatsApp';
 
 const ContactPopup = ({ onClose }) => {
   const [formData, setFormData] = useState({
@@ -20,7 +21,11 @@ const ContactPopup = ({ onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log('Form submitted:', formData);
-   
+
+    // Send form data to WhatsApp using popupFormEnquiry
+    popupFormEnquiry(formData);
+
+    // Close the popup if onClose is provided
     if (onClose) onClose();
   };
 
@@ -100,9 +105,9 @@ const ContactPopup = ({ onClose }) => {
                 required
               >
                 <option value="">-Please Choose An Option-</option>
-                <option value="option1">Coding</option>
-                <option value="option2">Digital Marketing</option>
-                <option value="option3">Multimedia</option>
+                <option value="Coding">Coding</option>
+                <option value="Digital Marketing">Digital Marketing</option>
+                <option value="Multimedia">Multimedia</option>
               </select>
             </div>
             

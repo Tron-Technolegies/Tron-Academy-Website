@@ -1,15 +1,16 @@
-import React from "react";
-import { dmCards } from "../../utils/chooseUsCards";
+import React from 'react';
+import { multimediaCards } from "../../utils/chooseUsCards";
 import "../../components/digitalmarketing/ChooseUsCards.css";
-export default function ChooseUsCards() {
+
+const MultimediaCards = () => {
   return (
     <div className="card-container">
-      {dmCards.map((card) => (
+      {multimediaCards.map((card) => (
         <Card key={card.id} {...card} />
       ))}
     </div>
   );
-}
+};
 
 function Card({ id, title, number, description, isHighlighted }) {
   return (
@@ -18,8 +19,7 @@ function Card({ id, title, number, description, isHighlighted }) {
     >
       {isHighlighted ? (
         <>
-          <h3 className="card-title">Creating Stories</h3>
-          <h2 className="card-title">Of The Future</h2>
+          <h3 className="card-title">{title}</h3>
         </>
       ) : (
         <>
@@ -31,3 +31,5 @@ function Card({ id, title, number, description, isHighlighted }) {
     </div>
   );
 }
+
+export default MultimediaCards;
