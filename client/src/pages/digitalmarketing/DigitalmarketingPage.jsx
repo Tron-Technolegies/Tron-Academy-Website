@@ -32,7 +32,7 @@ const DigitalmarketingPage = () => {
         mentors={mentorsData.dmMentors}
         title="Digital Marketing Mentors"
       />
-      <Testimonials 
+      <Testimonials
         testimonials={testimonialsData.digitalMarketing}
         title="What our leaners have to say About us!"
       />

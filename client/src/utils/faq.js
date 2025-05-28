@@ -3,33 +3,33 @@
 export const faq = [
   {
     id: 1,
-    question: "Do you offer discounts for students?",
+    question: "What makes TRON Academy training programs unique?",
     answer:
-      "Yes, we provide special discounts for full-time students and team enrolments.",
+      "TRON is an agency-oriented academy that offers training in all web activities like digital marketing, multimedia, and coding, while 90% of classes are practical and 10% theory. Here, our students go through the ropes of real client projects, while each gets personalised mentorship from industry experts. Furthermore, our advanced offline courses (5-month diploma in digital marketing and 6-month coding) come with a 100% placement guarantee and a GCC work experience certificate. Student benefits include an internship, portfolio development, interview prep, and soft skills training, while our basic/online programs offer placement assistance.",
   },
   {
     id: 2,
-    question: "Do you offer special pricing for teams?",
-    answer: "Yes, we have custom pricing for group enrolments.",
+    question: "Is your online digital marketing course suitable for beginners?",
+answer: "Absolutely! Our online marketing training will take you from basics to higher skill sets. There is no prior experience required. We have a basic 3-month course for online and offer Placement Assistance + Course Completion Certificate.",
   },
   {
     id: 3,
-    question: "What is the experience level of your teachers?",
-    answer:
-      "Our teachers come with extensive industry experience and are dedicated to helping you achieve your goals.",
+    question: "What are the skills I can master from your digital marketing course?",
+answer:
+  "You will learn search engine optimization, content marketing, social media marketing, performance marketing, WordPress development, design and editing. The course covers practical exposure through real tools and live projects and includes mock interview training and basic language training.",
   },
   {
     id: 4,
-    question: "What is the course refund policy?",
+    question: "Can I see a demo of the courses before joining?",
     answer:
-      "We offer flexible refund policies based on the course duration and progress. Contact us for more details.",
+      "Yes! We conduct free demo online classes and will send you our detailed brochure upon request.",
   },
   {
     id: 5,
     question: "Are there any requirements to join?",
     answer:
-      "The basic requirements are: you must have a minimum qualification of 12th grade and a laptop (if you don’t have one, we offer rental options for an additional fee). All we need is your willingness to learn and no prior technical background is required.",
-  },
+    "The basic requirements are: you must have a minimum qualification of 12th grade and a laptop (if you don’t have one, we offer rental options for an additional fee). All we need is your willingness to learn and no prior technical background is required.",
+},
   {
     id: 6,
     question: "How is TRON Academy different from other institutes?",

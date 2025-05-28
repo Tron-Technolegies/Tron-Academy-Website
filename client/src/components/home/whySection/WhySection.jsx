@@ -1,6 +1,7 @@
 import React from "react";
 import WhyDetailElt from "./WhyDetailElt";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export default function WhySection() {
   return (
@@ -40,11 +41,13 @@ export default function WhySection() {
       <div className="flex lg:flex-row flex-col justify-around items-center my-14">
         <div className="flex flex-col gap-10">
           <WhyDetailElt
-            title={"Portfolio Building"}
-            content={
-              "At Tron Academy, we help you achieve that. You’ll leave with not just a certificate but a portfolio that shows exactly where your strength lies."
-            }
-          />
+  title={"Portfolio Building"}
+  content={
+    <>
+      At Tron Academy, we help you achieve that. You’ll leave with not just a certificate but a portfolio that shows exactly where your strength lies-whether you’re enrolled in our coding, multimedia or <Link to="/digitalmarketing">digital marketing courses</Link>.
+    </>
+  }
+/>
           <WhyDetailElt
             title={"Learn from Experts"}
             content={
@@ -58,15 +61,17 @@ export default function WhySection() {
           <WhyDetailElt
             title={"Placement support"}
             content={
-              "We guarantee placement in our coding and digital marketing programs, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success."
+              "We guarantee placement in our coding and offline/online digital marketing courses, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success. "
             }
           />
           <WhyDetailElt
-            title={"Hands-on Projects"}
-            content={
-              "You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting to prepare you for industry challenges."
-            }
-          />
+  title={"Hands-on Projects"}
+  content={
+    <>
+      You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting - perfect for those taking our <Link to="/digitalmarketing">online digital marketing course</Link> or coding programs - to prepare you for industry challenges.
+    </>
+  }
+/>
         </div>
       </div>
     </div>

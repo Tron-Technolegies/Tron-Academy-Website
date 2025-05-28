@@ -23,12 +23,12 @@ export default function HomePage() {
     <div>
       <Helmet>
         <title>
-        Digital Marketing, Multi-Media & Full-Stack Training in Kerala
+        Best Multi-Media Course| Animation & Graphic Courses in India | in Kerala
         </title>
         <meta
           name="description"
-          content="Join top digital marketing training in Kerala, the best multi-media course, and expert
-full-stack developer training in Thrissur for a bright career ahead"
+          content="Enroll in the best multi-media course in Kerala and master animation and graphic design. Top-rated courses in India for creative professionals
+"
         />
         <meta
           name="keywords"
