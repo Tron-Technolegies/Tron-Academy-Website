@@ -8,6 +8,7 @@ import BlogPage from "./pages/blog/BlogPage";
 import TeamPage from "./pages/team/TeamPage";
 import AboutPage from "./pages/about/AboutPage";
 import SingleBlogPage from "./pages/blog/SingleBlogPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 export default function App() {
   const router = createBrowserRouter([
@@ -38,6 +39,10 @@ export default function App() {
           element: <AboutPage />,
         },
       ],
+    },
+    {
+      path: "/privacy",
+      element: <PrivacyPolicy />,
     },
   ]);
 
