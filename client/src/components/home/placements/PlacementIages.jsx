@@ -1,13 +1,13 @@
 import React from "react";
 
-export default function PlacementIages({ img, name, style }) {
+export default function PlacementIages({ img }) {
   return (
-    <div className={`flex flex-col items-center gap-5 ${style}`}>
-      <img
-        src={img}
-        className="xl:w-[201px] xl:h-[201px] lg:w-[150px] lg:h-[150px] w-[100px] h-[100px] rounded-full"
-      ></img>
-      {/* <p>{name}</p> */}
+    <div className="w-full h-48 md:h-56 lg:h-96 overflow-hidden rounded-lg shadow-lg">
+      <img 
+        src={img} 
+        alt="Placement" 
+        className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+      />
     </div>
   );
 }

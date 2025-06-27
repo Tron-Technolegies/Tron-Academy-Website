@@ -30,6 +30,23 @@ const url = [
     src: "/company/tikka.png",
     href: "https://tikkatonight.com/",
   },
+  {
+    src: "/company/indus.png",
+
+  },
+  {
+    src: "/comapny/precious.png",
+    href :"https://preciousstores.com/",
+  },
+  {
+    src: "/company/signature.png",
+    href: "https://signature-d-world.netlify.app/",
+  },
+  
+  {
+    src : "/comapny/earthcraft.png",
+    href: "https://earthcraftrealty.com/"
+  }
 ];
 
 export default function CompanyCarousel() {

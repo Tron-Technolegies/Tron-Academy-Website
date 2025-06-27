@@ -11,13 +11,19 @@ import DMfaq from "../../components/digitalmarketing/DMfaq";
 import CodingCourseSchedule from "../../components/coding/CodingCourseSchedule";
 import mentorsData from "../../utils/mentors";
 import testimonialsData from "../../utils/testimonials";
+import { useEffect } from "react";
+import CodingFaq from "../../components/coding/CodingFaq";
+import CodingCards from "../../components/coding/CodingCards";
 
 const CodingPage = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div>
       <CodingHeader />
       <WhyChooseCoding />
-      <ChooseUsCards />
+      <CodingCards/>
       <CodingCourseSchedule />
       <Mentors
         mentors={mentorsData.codingMentors}
@@ -30,7 +36,7 @@ const CodingPage = () => {
       />
       <BlogSection />
       <NextBatchSection />
-      <DMfaq />
+      <CodingFaq/>
     </div>
   );
 };

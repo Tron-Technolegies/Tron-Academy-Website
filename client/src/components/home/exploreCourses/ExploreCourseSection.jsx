@@ -14,9 +14,9 @@ export default function ExploreCourseSection() {
       image: "/digital.jpg",
       bgColor: "bg-teal-600",
       route: "/digitalmarketing",
-      duration: "3 Months + 1 Month",
-      startDate: "Sept 10, 2025",
-      time: "10am to 12pm",
+      duration: "4 months",
+      startDate: "Sept 1, 2025",
+      time: "10:30 am to 12:30pm",
     },
     {
       id: 1,

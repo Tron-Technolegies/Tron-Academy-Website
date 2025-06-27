@@ -129,3 +129,61 @@ export const multimediaCards = [
     isHighlighted: false,
   },
 ];
+
+export const codingCards = [
+  {
+    id: "c00",
+    title: "Master Python Through Real Coding",
+    number: null,
+    description: null,
+    isHighlighted: true,
+  },
+  {
+    id: "c01",
+    title: "90% Hands-On Coding",
+    number: "01",
+    description:
+      "Learn Python by writing code, not just reading theory. Our Thrissur course is 90% practical for real skill-building.",
+    isHighlighted: false,
+  },
+  {
+    id: "c02",
+    title: "Mentors with Industry Experience",
+    number: "02",
+    description:
+      "Learn from seasoned developers who bring real-world expertise to guide your Python journey.",
+    isHighlighted: false,
+  },
+  {
+    id: "c03",
+    title: "Impactful Python Projects",
+    number: "03",
+    description:
+      "Build apps, automate tasks, and solve real problems with projects that boost your resume.",
+    isHighlighted: false,
+  },
+  {
+    id: "c",
+    title: "Insights from Tech Experts",
+    number: "04",
+    description:
+      "Join guest sessions with tech leaders to discover how Python powers today’s innovations.",
+    isHighlighted: false,
+  },
+  {
+    id: "c05",
+    title: "100% Placement Support",
+    number: "05",
+    description:
+      "Get dedicated placement assistance to launch your coding career with confidence.",
+    isHighlighted: false,
+  },
+  {
+    id: "c06",
+    title: "Personalized Mentorship",
+    number: "06",
+    description:
+      "A dedicated coordinator tracks your progress, clarifies doubts, and keeps you on track.",
+    isHighlighted: false,
+  },
+];

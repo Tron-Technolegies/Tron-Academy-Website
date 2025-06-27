@@ -15,10 +15,22 @@ import DMsyllabus from "../../components/digitalmarketing/DMsyllabus";
 import DMfaq from "../../components/digitalmarketing/DMfaq";
 import mentorsData from "../../utils/mentors";
 import testimonialsData from "../../utils/testimonials";
+import { Helmet } from "react-helmet";
+import { useEffect } from "react";
 
 const DigitalmarketingPage = () => {
+   useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   return (
     <div>
+      <Helmet>
+        <title> Best Digital Marketing Course in Kerala | Tron Academy</title>
+        <meta
+          name="description"
+          content="Join the Best Digital Marketing Course in Kerala at Tron Academy! Learn SEO, Social media, paid ads & more with 90% practical training & placement guarantee."
+        />
+      </Helmet>
       <DigitalMarketingHeader />
       <WhyChooseUs />
       <ChooseUsCards />

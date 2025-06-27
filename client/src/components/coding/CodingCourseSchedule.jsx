@@ -3,7 +3,7 @@ import courseSchedule from "../../utils/courseSchedule.js";
 import { handleChatClick } from "../../utils/whatsApp.js";
 
 const CodingCourseSchedule = () => {
-  const displayedCourses = courseSchedule.slice(0, 5);
+  const displayedCourses = courseSchedule.slice(0, 3);
 
   const colors = ["bg-[#E8D9F3]"];
 
@@ -35,6 +35,7 @@ const CodingCourseSchedule = () => {
             <div className="w-full">
               <h3 className="text-xl font-bold mt-6">{course.title}</h3>
               <p className="mt-1 text-sm">Duration: {course.duration}</p>
+              <p className="mt-1 text-sm">Next Batch : {course.date}</p>
             </div>
 
             <div className="w-full">
@@ -48,7 +49,7 @@ const CodingCourseSchedule = () => {
           </div>
         ))}
 
-        <div className="flex items-center justify-center h-60">
+        {/* <div className="flex items-center justify-center h-60">
           <h3 className="text-xl sm:text-3xl font-bold text-purple-600 text-center">
             {" "}
             More
@@ -59,7 +60,7 @@ const CodingCourseSchedule = () => {
             <br />
             way
           </h3>
-        </div>
+        </div> */}
       </div>
     </div>
   );

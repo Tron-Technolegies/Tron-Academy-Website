@@ -5,7 +5,7 @@ import { handleChatClick } from '../../utils/whatsApp';
 
 const DigitalMarketingHeader = () => {
   return (
-    <div className='header_container '>
+    <div className='header_container'>
       <div className="header_contents">
         <div className="header_text">
           <h1>
@@ -13,10 +13,24 @@ const DigitalMarketingHeader = () => {
             <br />With 100% Placement Guarantee.
           </h1>
           <p>
-            TRON Academy Transforms Your Career with the Most Practical Digital Marketing course.
-            <br />Are you ready to secure your career with the most job-ready digital marketing course in Kerala?
+            TRON Academy Transforms Your Career with the Most Practical Digital Marketing Course.
+            <br /> Are you ready to secure your career with the most job-ready digital marketing course in Kerala?
+
           </p>
-          <button className="cta_button" onClick={() => handleChatClick("know more about digital marketing course")}>Learn & Earn</button>
+          <div className="button_container">
+            <button 
+              className="cta_button" 
+              onClick={() => handleChatClick("know more about digital marketing course")}
+            >
+              Learn & Earn
+            </button>
+            <button 
+              className="cta_button" 
+              onClick={() => handleChatClick("know more about digital marketing course")}
+            >
+              Launch Your Career
+            </button>
+          </div>
         </div>
       </div>
       <div className="accent_triangle icon_top_left"></div>

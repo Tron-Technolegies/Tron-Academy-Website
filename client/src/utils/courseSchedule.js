@@ -4,22 +4,25 @@ const courseSchedule = [
     mode: "OFFLINE",
     title: "MERN Stack Development",
     duration: "6 Months",
+    date : "July 3rd Week",
     schedule: "WEEKDAY",
     category: "coding"
   },
   {
     id: 2,
-    mode: "ONLINE",
+    mode: "OFFLINE",
     title: "Python-Django Development",
     duration: "6 Months",
+    date : "July 3rd Week",
     schedule: "WEEKDAY",
     category: "coding"
   },
   {
     id: 3,
-    mode: "OFFLINE",
+    mode: "OFFLINE/ONLINE",
     title: "Flutter App Development",
     duration: "6 Months",
+    date : "July 3rd Week",
     schedule: "WEEKDAY",
     category: "multimedia"
   },
@@ -31,19 +34,20 @@ const courseSchedule = [
     schedule: "WEEKDAY",
     category: "coding"
   },
-  {
-    id: 5,
-    mode: "ONLINE",
-    title: "WordPress Development",
-    duration: "6 Months",
-    schedule: "WEEKDAY",
-    category: "coding"
-  },
+  // {
+  //   id: 5,
+  //   mode: "ONLINE",
+  //   title: "WordPress Development",
+  //   duration: "6 Months",
+  //   schedule: "WEEKDAY",
+  //   category: "coding"
+  // },
   {
     id: 6,
-    mode: "ONLINE",
+    mode: "OFFLINE",
     title: "UI/UX Design",
-    duration: "4 Months",
+    duration: "3 Months",
+    date : "August 2nd Week",
     schedule: "WEEKEND",
     category: "multimedia"
   },
@@ -58,31 +62,35 @@ const courseSchedule = [
   {
     id: 8,
     mode: "OFFLINE",
-    title: "PRODUCTION AND POST PRODUCTION",
+    title: "UI/UX DESIGNING",
+   
     duration: "3 Months",
+    date : "August 2nd Week",
     schedule: "WEEKDAY",
     category: "multimedia"
   },
   {
     id: 9,
     mode: "OFFLINE",
-    title: "VFX ADVANCED",
+    title: "GRAPHIC DESIGN",
     duration: "4 Months",
+    date : "July 3rd Week",
     schedule: "WEEKDAY",
     category: "multimedia"
   },
   {
     id: 10,
     mode: "OFFLINE",
-    title: "VFX BASIC",
-    duration: "3 Months",
+    title: "Video Editing",
+    duration: "6 Months",
+    date : "August",
     schedule: "WEEKDAY",
     category: "multimedia"
   },
   {
     id: 11,
     mode: "OFFLINE",
-    title: "UI/UX ADVANCED",
+     title: "PRODUCTION AND POST PRODUCTION",
     duration: "3 Months",
     schedule: "WEEKDAY",
     category: "multimedia"

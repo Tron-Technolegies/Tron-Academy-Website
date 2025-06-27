@@ -45,7 +45,7 @@ export default function FindCourseSection() {
   }
   return (
     <div className="lg:px-[120px] lg:py-10 px-10 py-5 bg-gradient-to-tl from-[#F4E3FA] from-5%">
-      <div className="flex flex-col gap-5 items-center my-10">
+      {/* <div className="flex flex-col gap-5 items-center my-10">
         <div className="relative">
           <h4 className="comic-font md:text-4xl text-2xl font-black">
             Find Your ideal Course
@@ -71,7 +71,7 @@ export default function FindCourseSection() {
             <IoIosSearch />
           </button>
         </div>
-      </div>
+      </div> */}
       <div className="flex md:flex-row flex-col gap-5 md:justify-around items-center my-10 mt-20">
         <DetailCard icon={<FaUsers />} no={1000} content={"Students"} />
         <DetailCard icon={<RiPresentationFill />} no={15} content={"Mentors"} />

@@ -14,6 +14,7 @@ import GetInTouchSection from "../../components/home/getInTouch/GetInTouchSectio
 import FaqSection from "../../components/home/faq/FaqSection";
 import Helmet from "react-helmet";
 import FoundersNote from "../../components/home/foundersNote/FoundersNote";
+import RewindMoments from "../../components/home/rewindmoments/RewindMoments";
 
 export default function HomePage() {
   useEffect(() => {
@@ -23,7 +24,8 @@ export default function HomePage() {
     <div>
       <Helmet>
         <title>
-        Best Multi-Media Course| Animation & Graphic Courses in India | in Kerala
+          Best Multi-Media Course| Animation & Graphic Courses in India | in
+          Kerala
         </title>
         <meta
           name="description"
@@ -37,14 +39,15 @@ export default function HomePage() {
       </Helmet>
       <LandingSection />
       <FindCourseSection />
-      <WhySection />
       <ExploreCourseSection />
-      {/* <InstructorsSection /> */}
-      <FoundersNote />
-      <PortfolioSection />
       <PlacementSection />
-      <SisterSection />
       <CompanySection />
+      <RewindMoments />
+      <WhySection />
+      <PortfolioSection />
+      <FoundersNote />
+      <InstructorsSection />
+      <SisterSection />
       <CelebrationSection />
       <ReviewSection />
       <GetInTouchSection />

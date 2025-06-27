@@ -26,7 +26,7 @@ const MultimediaHeader = () => {
               handleChatClick("know more about multimedia courses")
             }
           >
-            Learn & Earn
+            Enquiry Now
           </button>
         </div>
       </div>

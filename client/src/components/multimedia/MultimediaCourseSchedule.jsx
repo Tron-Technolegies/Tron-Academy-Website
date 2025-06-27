@@ -39,6 +39,7 @@ const MultimediaCourseSchedule = () => {
             <div className="w-full">
               <h3 className="text-xl font-bold mt-6">{course.title}</h3>
               <p className="mt-1 text-sm">Duration: {course.duration}</p>
+              <p className="mt-1 text-sm">Duration: {course.date}</p>
             </div>
 
             <div className="w-full">

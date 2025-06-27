@@ -1,7 +1,6 @@
 import React from "react";
 import WhyDetailElt from "./WhyDetailElt";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
 
 export default function WhySection() {
   return (
@@ -12,8 +11,8 @@ export default function WhySection() {
         </h4>
         <p className="text-[#5E5E5E] roboto-font font-normal text-sm lg:text-base leading-[22px] max-w-[524px]">
           At TRON Academy, we don’t just teach—you learn the skills that
-          guarantee your job-ready from day one.If you want to stand out, this
-          is where you belong.Here’s why you should choose us:
+          guarantee your job-ready from day one. If you want to stand out, this
+          is where you belong. Here’s why you should choose us:
         </p>
         <motion.img
           src="/robot.png"
@@ -41,17 +40,21 @@ export default function WhySection() {
       <div className="flex lg:flex-row flex-col justify-around items-center my-14">
         <div className="flex flex-col gap-10">
           <WhyDetailElt
-  title={"Portfolio Building"}
-  content={
-    <>
-      At Tron Academy, we help you achieve that. You’ll leave with not just a certificate but a portfolio that shows exactly where your strength lies-whether you’re enrolled in our coding, multimedia or <Link to="/digitalmarketing">digital marketing courses</Link>.
-    </>
-  }
-/>
+            title={"Portfolio Building"}
+            content={
+              "At Tron Academy, we help you achieve that. You’ll leave with not just a certificate but a portfolio that shows exactly where your strength lies."
+            }
+          />
           <WhyDetailElt
             title={"Learn from Experts"}
             content={
               "At TRON Academy, you don’t just learn; you’re mentored by the best industry leaders who’ve made their mark. With insights from our instructors, you’ll gain the edge you need."
+            }
+          />
+          <WhyDetailElt
+            title={"LinkedIn Optimization"}
+            content={
+              "Optimize LinkedIn Profiles To Improve Visibility And Networking Opportunities."
             }
           />
         </div>
@@ -61,17 +64,21 @@ export default function WhySection() {
           <WhyDetailElt
             title={"Placement support"}
             content={
-              "We guarantee placement in our coding and offline/online digital marketing courses, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success. "
+              "We guarantee placement in our coding and digital marketing programs, ensuring you have the skills to land your ideal job, while our multimedia courses keep you on the fast track to success."
             }
           />
           <WhyDetailElt
-  title={"Hands-on Projects"}
-  content={
-    <>
-      You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting - perfect for those taking our <Link to="/digitalmarketing">online digital marketing course</Link> or coding programs - to prepare you for industry challenges.
-    </>
-  }
-/>
+            title={"Hands-on Projects"}
+            content={
+              "You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting to prepare you for industry challenges."
+            }
+          />
+          <WhyDetailElt
+            title={"Job Ready"}
+            content={
+              "Climb The Ladder That Leads You To Your Dream Job."
+            }
+          />
         </div>
       </div>
     </div>
