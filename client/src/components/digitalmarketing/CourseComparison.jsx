@@ -3,11 +3,11 @@ import "../../components/digitalmarketing/CourseComparison.css";
 
 const CourseComparison = () => {
   return (
-    <div className='course_comparison_container'>
-      <div className="course_comparison_header">
+    <div className='course_comparison_container course_comparison_centered'>
+      <div className="course_comparison_header course_comparison_header_centered">
         <h2>Why Most Digital Marketing Courses Fail Your Career <br /><span id='dm_course_comparison'>(And How Tron Guarantees Success)</span></h2>
       </div>
-      <div className="course_comparisons">
+      <div className="course_comparisons course_comparisons_centered">
         <div className="ordinary_courses">
           <div className="course_comparison_title">
             <h3>The Harsh Reality for Ordinary Course Graduates (Only Course Certificate - No Internship/Portfolio)</h3>

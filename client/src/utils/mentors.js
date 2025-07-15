@@ -60,9 +60,9 @@ const mentorsData = {
     },
     {
       id: 2,
-      name: "Priya Sharma",
-      designation: "React.js Specialist",
-      image: "https://via.placeholder.com/150",
+      name: "Parvathi Nair",
+      designation: "Python Developer",
+      image: "/public/team/parvathy.JPG",
     },
     {
       id: 3,

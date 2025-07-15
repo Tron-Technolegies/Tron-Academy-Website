@@ -25,15 +25,15 @@ const CodingPage = () => {
       <WhyChooseCoding />
       <CodingCards/>
       <CodingCourseSchedule />
-      <Mentors
+      {/* <Mentors
         mentors={mentorsData.codingMentors}
         title="Mentorship from Industry Experts"
-      />
+      /> */}
       <CodingStudentsProjects />
-      <Testimonials 
+      {/* <Testimonials 
         testimonials={testimonialsData.coding}
         title="What our leaners have to say About us!"
-      />
+      /> */}
       <BlogSection />
       <NextBatchSection />
       <CodingFaq/>

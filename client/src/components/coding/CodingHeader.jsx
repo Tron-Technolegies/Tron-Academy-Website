@@ -8,14 +8,14 @@ const CodingHeader = () => {
       <div className="header_contents">
         <div className="header_text">
           <h1>
-            <span className='main_title_color'>Level Up Your Career </span> In Kerala
-            <br />With 100% Placement Guarantee.
+            <span className='main_title_color'>Level Up Your Career </span> 
+            <br /> with the best coding course in kerala.
           </h1>
           <p>
-            TRON Academy Transforms Your Career with the Most Practical Digital Marketing course.
-            <br />Are you ready to secure your career with the most job-ready digital marketing course in Kerala?
+            At Tron Academy, we transform beginners into skilled coders and future-ready developers through hands-on experience training in Python, Data Science, Web Development, and more. Whether you dream of becoming a Python expert in Thrissur, a Data Scientist in Kerala, or a Web Developer, We don’t provide ordinary coding courses – we deliver industry domination programs.
+
           </p>
-          <button className="cta_button" onClick={() => handleChatClick("know more about coding course")} >Learn & Earn</button>
+          <button className="cta_button" onClick={() => handleChatClick("know more about coding course")} >Explore Courses</button>
         </div>
       </div>
       <div className="accent_triangle icon_top_left"></div>

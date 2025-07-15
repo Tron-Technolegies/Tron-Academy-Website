@@ -16,6 +16,7 @@ const Testimonials = ({ testimonials, title = "What Our Learners Have To Say Abo
   };
 
   const currentTestimonial = testimonials[currentIndex];
+  const nextTestimonial = testimonials[(currentIndex + 1) % testimonials.length];
 
   return (
     <div className="bg-gradient-to-r from-pink-100 to-purple-100 py-8 sm:py-10 px-4 sm:px-6 lg:px-8">
@@ -29,82 +30,59 @@ const Testimonials = ({ testimonials, title = "What Our Learners Have To Say Abo
         </h3>
 
         {/* Testimonial Content */}
-        <div className="flex flex-col md:flex-row gap-6 md:gap-8">
-          {/* Left: Testimonial Text with Quote Mark */}
-          <div className="md:w-2/5 relative">
-            {/* Large Quote Marks */}
-            <div className="text-purple-100 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-serif absolute -top-8 sm:-top-10 md:-top-12 lg:-top-16 left-0">
-              " "
+        <div className="flex flex-col md:flex-row gap-6 md:gap-8 items-start min-h-[400px]">
+          {/* Left: Text */}
+          <div className="md:w-1/2 relative">
+            {/* Decorative Quote Mark */}
+            <div className="text-purple-100 text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-serif absolute -top-10 left-0">
+              “ ”
             </div>
-
-            {/* Testimonial Text */}
-            <div className="pt-6 sm:pt-8">
+            <div className="pt-12">
               <h4 className="text-lg sm:text-xl md:text-2xl font-bold">{currentTestimonial.name}</h4>
-              <p className="text-xs sm:text-sm md:text-base text-gray-600 border-b border-gray-300 pb-2 mb-4 sm:mb-6">
+              <p className="text-xs sm:text-sm md:text-base text-gray-600 border-b border-gray-300 pb-2 mb-4">
                 {currentTestimonial.role}
               </p>
-              <p className="text-sm sm:text-base md:text-lg text-gray-800">
+              <p className="text-sm sm:text-base md:text-lg text-gray-800 leading-relaxed whitespace-pre-wrap overflow-visible">
                 {currentTestimonial.quote}
               </p>
             </div>
           </div>
 
-          {/* Right: Video Thumbnails */}
-          <div className="md:w-3/5 flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
-            {/* First Video Thumbnail */}
-            <div className="relative w-full sm:w-40 md:w-48 h-60 sm:h-64 md:h-72">
-              <img
-                src={currentTestimonial.videoThumbnail}
-                alt={`${currentTestimonial.name} testimonial thumbnail`}
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute inset-0 flex justify-center items-center">
-                <div className="bg-gray-800 bg-opacity-50 rounded-full p-2 sm:p-3">
-                  <svg className="w-5 h-5 sm:w-6 text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-              </div>
-              {/* Video Controls */}
-              <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                <div className="bg-black bg-opacity-50 text-white px-2 sm:px-3 py-1 rounded-full flex items-center space-x-1">
-                  <span className="text-xs sm:text-sm">●</span>
-                  <span className="text-xs sm:text-sm">●</span>
-                  <span className="text-xs sm:text-sm">●</span>
-                </div>
-              </div>
-            </div>
+          {/* Right: Thumbnails */}
+          <div className="md:w-1/2 flex flex-col sm:flex-row gap-4 justify-center md:justify-end">
+            {[currentTestimonial, nextTestimonial].map((item, idx) => {
+              const videoIdMatch = item.videoUrl?.match(/(?:youtu\.be\/|youtube\.com\/(?:watch\?v=|shorts\/|embed\/))([\w\-]{11})/);
+              const videoId = videoIdMatch ? videoIdMatch[1] : null;
+              const thumbnail = item.thumbnail || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : '');
 
-            {/* Second Video Thumbnail */}
-            <div className="relative w-full sm:w-40 md:w-48 h-60 sm:h-64 md:h-72">
-              <img
-                src={testimonials[(currentIndex + 1) % testimonials.length].videoThumbnail}
-                alt={`${testimonials[(currentIndex + 1) % testimonials.length].name} testimonial thumbnail`}
-                className="w-full h-full object-cover rounded"
-              />
-              <div className="absolute inset-0 flex justify-center items-center">
-                <div className="bg-gray-800 bg-opacity-50 rounded-full p-2 sm:p-3">
-                  <svg className="w-5 h-5 sm:w-6  text-white" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
+              return (
+                <div
+                  key={idx}
+                  onClick={() => window.open(item.videoUrl, "_blank")}
+                  className="relative w-full sm:w-48 md:w-60 h-64 sm:h-80 md:h-96 cursor-pointer" // Increased height to h-64 (256px), sm:h-80 (320px), md:h-96 (384px)
+                >
+                  <img
+                    src={thumbnail}
+                    alt={`${item.name} testimonial`}
+                    className="w-full h-full object-cover rounded shadow-md"
+                  />
+                  <div className="absolute inset-0 flex justify-center items-center">
+                    <div className="bg-gray-800 bg-opacity-50 rounded-full p-3">
+                      <svg className="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z" />
+                      </svg>
+                    </div>
+                  </div>
                 </div>
-              </div>
-              {/* Video Controls */}
-              <div className="absolute bottom-4 left-0 right-0 flex justify-center">
-                <div className="bg-black bg-opacity-50 text-white px-2 sm:px-3 py-1 rounded-full flex items-center space-x-1">
-                  <span className="text-xs sm:text-sm">●</span>
-                  <span className="text-xs sm:text-sm">●</span>
-                  <span className="text-xs sm:text-sm">●</span>
-                </div>
-              </div>
-            </div>
+              );
+            })}
           </div>
         </div>
 
-        {/* Navigation Arrows */}
+        {/* Navigation */}
         <div className="flex justify-end items-center mt-6 sm:mt-8 space-x-4">
           <button onClick={handlePrev} className="text-gray-600 hover:text-purple-700" aria-label="Previous testimonial">
-            <svg className="w-5 h-5 sm:w-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" />
             </svg>
           </button>
@@ -113,7 +91,7 @@ const Testimonials = ({ testimonials, title = "What Our Learners Have To Say Abo
             <span className="text-gray-400 text-xs sm:text-sm">/{String(testimonials.length).padStart(2, '0')}</span>
           </span>
           <button onClick={handleNext} className="text-gray-600 hover:text-purple-700" aria-label="Next testimonial">
-            <svg className="w-5 h-5 sm:w-6 " fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <svg className="w-5 h-5 sm:w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" />
             </svg>
           </button>

@@ -27,6 +27,7 @@ export default function PlacementSection() {
         <PlacementIages img="/placements/07.jpg" />
         <PlacementIages img="/placements/08.jpg" />
         <PlacementIages img="/placements/09.jpg" />
+        <PlacementIages img="/placements/10.jpg" />
       </div>
     </div>
   );

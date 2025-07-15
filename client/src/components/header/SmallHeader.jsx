@@ -84,13 +84,13 @@ export default function SmallHeader({ setSmallBar }) {
         >
           Blog
         </NavLink>
-        <NavLink
+        {/* <NavLink
           to={"/team"}
           className="border-b w-full py-2 border-hoverPrimary hover-navlink hover-animation hover:drop-shadow-navlink text-xl"
           onClick={() => setSmallBar(false)}
         >
           Our Team
-        </NavLink>
+        </NavLink> */}
         <NavLink
           to={"/about"}
           className="border-b w-full py-2 border-hoverPrimary hover-navlink hover-animation hover:drop-shadow-navlink text-xl"

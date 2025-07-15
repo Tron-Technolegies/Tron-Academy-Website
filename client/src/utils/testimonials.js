@@ -1,26 +1,27 @@
 const testimonials = {
   digitalMarketing: [
     {
-      name: "Kay Dooley",
-      role: "SEO Specialist",
-      category: "digital marketing",
-      quote: "Ipsum vel nobis doloremque est aut non accusantium vero molestias. Et est minima dolorem eum modi atque sint nobis. Enim quod facere reiciendis necessitatibus ipsum non aspernatur voluptate id.",
-      videoThumbnail: "https://via.placeholder.com/150"
-    },
-    {
-      name: "Sarah Johnson",
-      role: "Digital Marketing Manager",
-      category: "digital marketing",
-      quote: "The digital marketing course transformed my career. I learned everything from SEO to social media marketing and PPC campaigns. The practical approach helped me land my dream job.",
-      videoThumbnail: "https://via.placeholder.com/150"
-    },
-    {
-      name: "Michael Rodriguez",
-      role: "Content Marketing Specialist",
-      category: "digital marketing",
-      quote: "Amazing curriculum covering all aspects of digital marketing. The mentors were industry experts who provided real-world insights that you can't get from textbooks.",
-      videoThumbnail: "https://via.placeholder.com/150"
-    }
+  name: "Fayis NK",
+  role: "SEO Specialist",
+  category: "digital marketing",
+  quote: "I was just a B.Com and CMA student before joining Tron Academy. But this place truly changed my life. I developed a website on my own and even brought it to the first rank on Google. I also ran Meta ads and generated real leads. The best part is I got 2-3 freelance projects during the course itself. And sure Tron is the best option for a digital marketing course in Thrissur.",
+  videoUrl: "https://youtube.com/shorts/1sLUHb_-GXk",
+  thumbnail: "https://img.youtube.com/vi/1sLUHb_-GXk/hqdefault.jpg"
+},
+  {
+    name: "Ajith M",
+    role: "Wordpress Developer",
+    category: "digital marketing",
+quote: "2-year gap after my degree, I wasn’t sure how to restart my career. Tron Academy gave me confidence, skills, and a fun learning environment. I learned to handle social media professionally and even worked on brands like Porsche and Milma. It truly felt like college life again -with events like Halloween, Kerala Piravi and Christmas. Truly a great digital marketing institute in Thrissur.",
+    videoUrl: "https://www.youtube.com/shorts/xtgchVQXiME"
+  },
+  // {
+  //   name: "Michael Rodriguez",
+  //   role: "Content Marketing Specialist",
+  //   category: "digital marketing",
+  //   quote: "Amazing curriculum covering all aspects of digital marketing...",
+  //   videoUrl: "https://www.youtube.com/embed/Jr7Q_jKcX9s"
+  // }
   ],
   
   /*coding testimonials*/

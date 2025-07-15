@@ -52,24 +52,24 @@ const RewindMoments = () => {
       id: 3,
       videoUrl: "https://youtube.com/shorts/FFe5sft6Ubk?feature=shared",
     },
-    {
-      id: 4,
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      thumbnail:
-        "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=600&fit=crop",
-    },
-    {
-      id: 5,
-      videoUrl: "https://youtube.com/shorts/-Bj9ovPedeg?feature=shared",
-      thumbnail:
-        "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=600&fit=crop",
-    },
-    {
-      id: 6,
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-      thumbnail:
-        "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400&h=600&fit=crop",
-    },
+    // {
+    //   id: 4,
+    //   videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    //   thumbnail:
+    //     "https://images.unsplash.com/photo-1511632765486-a01980e01a18?w=400&h=600&fit=crop",
+    // },
+    // {
+    //   id: 5,
+    //   videoUrl: "https://youtube.com/shorts/-Bj9ovPedeg?feature=shared",
+    //   thumbnail:
+    //     "https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=400&h=600&fit=crop",
+    // },
+    // {
+    //   id: 6,
+    //   videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    //   thumbnail:
+    //     "https://images.unsplash.com/photo-1542038784456-1ea8e935640e?w=400&h=600&fit=crop",
+    // },
   ];
 
   const handleVideoClick = (video) => {

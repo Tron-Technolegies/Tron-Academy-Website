@@ -40,10 +40,10 @@ const DigitalmarketingPage = () => {
       <DMsyllabus />
       <DMopportunities />
       <CourseComparison />
-      <Mentors
+      {/* <Mentors
         mentors={mentorsData.dmMentors}
         title="Digital Marketing Mentors"
-      />
+      /> */}
       <Testimonials
         testimonials={testimonialsData.digitalMarketing}
         title="What our leaners have to say About us!"

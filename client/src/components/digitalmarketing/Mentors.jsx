@@ -11,15 +11,16 @@ const Mentors = ({ mentors, title = "Mentorship From Industry Experts" }) => {
         {mentors.map((mentor) => (
           <div key={mentor.id} className="bg-white rounded-lg shadow-md p-3 sm:p-4 text-center">
             <img
-              src={mentor.image}
+              src={mentor.image || 'default-image.jpg'} // Fallback image if mentor.image is not provided
               alt={mentor.name}
-              className="w-full h-32 sm:h-40 object-cover rounded-t-lg mb-3 sm:mb-4"
+              className="w-full h-48 sm:h-64 object-cover rounded-t-lg mb-3 sm:mb-4" // Increased height from h-32/h-40 to h-48/h-64
+              onError={(e) => { e.target.src = 'default-image.jpg'; }} // Handle image load error
             />
             <h2 className="text-base sm:text-lg font-semibold">
-              {mentor.designation}
+              {mentor.name}
             </h2>
             <p className="text-sm sm:text-base text-gray-600">
-              {mentor.name}
+              {mentor.designation}
             </p>
             <div className="flex justify-center gap-2 sm:gap-3 mt-2 sm:mt-3">
               <a href="#" className="text-gray-500 hover:text-blue-600">

@@ -39,15 +39,15 @@ const MultimediaPage = () => {
       <CourseOutcomes/>
       <MultimediaTools/>
       <MultimediaCourseSchedule />
-      <Mentors
+      {/* <Mentors
         mentors={mentorsData.multimediaMentors}
         title="Mentorship from Industry Experts"
-      />
+      /> */}
       <MultimediaStudentsProjects />
-      <Testimonials
+      {/* <Testimonials
         testimonials={testimonialsData.multimedia}
         title="What Our Creative Students Say About Us!"
-      />
+      /> */}
       <BlogSection />
       <NextBatchSection />
       <MultimediaFaq/>

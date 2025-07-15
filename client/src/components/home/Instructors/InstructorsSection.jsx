@@ -28,9 +28,9 @@ export default function InstructorsSection() {
           position={"Content Marketing"}
         />
         <InstructorCard
-          img={"/dil.jpg"}
-          name={"Dilshad"}
-          position={"Graphic Designer"}
+          img={"/team/shafikka.jpg"}
+          name={"Shafi"}
+          position={"MERN stack developer"}
         />
         <InstructorCard
           img={"/ashwin.jpg"}
@@ -38,9 +38,9 @@ export default function InstructorsSection() {
           position={"Front-End Developer"}
         />
         <InstructorCard
-          img={"/alex.jpg"}
-          name={"Alex"}
-          position={"SEO Analyst"}
+          img={"/team/shiju.jpg"}
+          name={"Shiju"}
+          position={"UI/UX Designer"}
         />
       </div>
       <div className="extra:max-w-[365px] flex flex-col items-center extra:items-start gap-3">

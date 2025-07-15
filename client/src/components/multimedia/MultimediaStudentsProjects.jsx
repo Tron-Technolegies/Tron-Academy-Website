@@ -45,14 +45,14 @@ const MultimediaStudentsProjects = () => {
                   }}
                 />
               </div>
-              <div className="p-4">
+              {/* <div className="p-4">
                 <h3 className="text-lg font-medium text-gray-900">
                   {project.title || "Student Project"}
                 </h3>
                 <p className="text-sm text-gray-600 mt-1">
                   By {project.studentName}
                 </p>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
