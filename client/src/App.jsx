@@ -11,6 +11,8 @@ import SingleBlogPage from "./pages/blog/SingleBlogPage";
 import CodingPage from "./pages/coding/CodingPage";
 import DigitalmarketingPage from "./pages/digitalmarketing/DigitalmarketingPage";
 import MultimediaPage from "./pages/multimedia/MultimediaPage";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+
 
 export default function App() {
   const router = createBrowserRouter([
@@ -53,6 +55,10 @@ export default function App() {
           element : <MultimediaPage/>
         }
       ],
+    },
+    {
+      path: "/privacy",
+      element: <PrivacyPolicy />,
     },
   ]);
 

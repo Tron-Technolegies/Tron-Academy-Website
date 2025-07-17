@@ -11,6 +11,7 @@ export default function FooterCompanySection() {
         <Link to={"/blog"}>Blog</Link>
         <Link to={"/team"}>Our Team</Link>
         <Link to={"/about"}>About</Link>
+        <Link to={"/privacy"}>Privacy Policy</Link>
       </div>
     </div>
   );
