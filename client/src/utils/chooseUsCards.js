@@ -8,124 +8,82 @@ export const dmCards = [
   },
   {
     id: "01",
-    title: "90% Practical, 10% Theory",
+    title: "Practical-First Learning Approach",
     number: "01",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "90% practical and 10% theory — designed to help you apply concepts through hands-on training, not just classroom learning.",
     isHighlighted: false,
   },
   {
     id: "02",
-    title: "Learn from top Professionals",
+    title: "Learn From Industry Professionals",
     number: "02",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "Train under accomplished digital marketers and industry experts who bring real-world experience to the classroom.",
     isHighlighted: false,
   },
   {
     id: "03",
-    title: "Build portfolio working with Real Clients",
+    title: "Build a Real-World Portfolio",
     number: "03",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "Work on live client projects during the course to build a portfolio that showcases your expertise and readiness for the job market.",
     isHighlighted: false,
   },
   {
     id: "04",
-    title: "90% Practical, 10% Theory",
+    title: "Guest Lectures by Industry Leaders",
     number: "04",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "Gain valuable insights from guest sessions led by top professionals sharing the latest trends and case studies.",
     isHighlighted: false,
   },
   {
     id: "05",
-    title: "90% Practical, 10% Theory",
+    title: "Assured Placement Assistance",
     number: "05",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "We offer dedicated placement support, connecting you with leading agencies and companies for internships and full-time roles.",
     isHighlighted: false,
   },
   {
     id: "06",
-    title: "Learn from top Professionals",
+    title: "Dedicated Course Coordinator",
     number: "06",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "Each batch is assigned a course coordinator to provide continuous support, track progress, and resolve queries promptly.",
     isHighlighted: false,
   },
   {
     id: "07",
-    title: "Build portfolio working with Real Clients",
+    title: "One-on-One Mentorship",
     number: "07",
-    description:
-      "No preaching Just Practical! hands on Training to Enhance your skill set.",
+    description: "Receive personalized guidance through 1:1 mentoring sessions tailored to your learning goals and career aspirations.",
     isHighlighted: false,
   },
 ];
 
 export const multimediaCards = [
   {
-    id: "m00",
-    title: "Creating Multimedia Stories",
-    number: null,
-    description: null,
-    isHighlighted: true,
-  },
-  {
     id: "m01",
-    title: "90% Practical, 10% Theory",
+    title: "Real Industry Projects",
     number: "01",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
+    description: "Build a portfolio with actual client work.",
     isHighlighted: false,
   },
   {
     id: "m02",
-    title: "Learn from Multimedia Experts",
+    title: "GCC Work Experience Certificate",
     number: "02",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
+    description: "Stand out in India & Middle East job markets.",
     isHighlighted: false,
   },
   {
     id: "m03",
-    title: "Build portfolio with Real Multimedia Projects",
+    title: "Specialized Tracks",
     number: "03",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
+    description: "Laser-focused training in high-demand fields.",
     isHighlighted: false,
   },
   {
     id: "m04",
-    title: "90% Practical, 10% Theory",
+    title: "Placement Assistance",
     number: "04",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
-    isHighlighted: false,
-  },
-  {
-    id: "m05",
-    title: "90% Practical, 10% Theory",
-    number: "05",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
-    isHighlighted: false,
-  },
-  {
-    id: "m06",
-    title: "Learn from Multimedia Experts",
-    number: "06",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
-    isHighlighted: false,
-  },
-  {
-    id: "m07",
-    title: "Build portfolio with Real Multimedia Projects",
-    number: "07",
-    description:
-      "No preaching Just Practical! Hands-on multimedia training to enhance your skill set.",
+    description: "Priority access to top studios & agencies.",
     isHighlighted: false,
   },
 ];

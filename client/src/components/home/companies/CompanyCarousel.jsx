@@ -35,7 +35,7 @@ const url = [
 
   },
   {
-    src: "/comapny/precious.png",
+    src: "/company/precious-stores.png",
     href :"https://preciousstores.com/",
   },
   {
@@ -44,7 +44,7 @@ const url = [
   },
   
   {
-    src : "/comapny/earthcraft.png",
+    src : "/company/earthcraft.png",
     href: "https://earthcraftrealty.com/"
   }
 ];

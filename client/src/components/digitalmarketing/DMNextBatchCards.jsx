@@ -60,7 +60,7 @@ const DMNextBatchCards = () => {
                   <line x1="3" y1="10" x2="21" y2="10" />
                 </svg>
               </span>
-              <span>2 Months</span>
+              <span>3 Months</span>
             </div>
             <div className="dm-info-item">
               <span className="dm-icon dm-online-icon">

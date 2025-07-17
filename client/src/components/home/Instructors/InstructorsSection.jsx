@@ -57,7 +57,7 @@ export default function InstructorsSection() {
             className="md:w-[123px] md:h-[110px] w-[70px] h-[63px]"
           ></img>
           <motion.button
-            onClick={() => navigate("/team")}
+            // onClick={() => navigate("/team")}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1, backgroundColor: "#CA90F2" }} // Change color on hover
             whileTap={{ scale: 0.9 }}
