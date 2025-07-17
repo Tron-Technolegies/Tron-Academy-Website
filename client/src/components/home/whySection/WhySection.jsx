@@ -11,8 +11,8 @@ export default function WhySection() {
         </h4>
         <p className="text-[#5E5E5E] roboto-font font-normal text-sm lg:text-base leading-[22px] max-w-[524px]">
           At TRON Academy, we don’t just teach—you learn the skills that
-          guarantee your job-ready from day one.If you want to stand out, this
-          is where you belong.Here’s why you should choose us:
+          guarantee your job-ready from day one. If you want to stand out, this
+          is where you belong. Here’s why you should choose us:
         </p>
         <motion.img
           src="/robot.png"
@@ -51,6 +51,12 @@ export default function WhySection() {
               "At TRON Academy, you don’t just learn; you’re mentored by the best industry leaders who’ve made their mark. With insights from our instructors, you’ll gain the edge you need."
             }
           />
+          <WhyDetailElt
+            title={"LinkedIn Optimization"}
+            content={
+              "Optimize LinkedIn Profiles To Improve Visibility And Networking Opportunities."
+            }
+          />
         </div>
         <div className="border lg:block hidden border-[#E671E5] border-dashed h-[200px]"></div>
 
@@ -65,6 +71,12 @@ export default function WhySection() {
             title={"Hands-on Projects"}
             content={
               "You'll learn by working directly with our GCC-based clients, applying your skills in a real-world setting to prepare you for industry challenges."
+            }
+          />
+          <WhyDetailElt
+            title={"Job Ready"}
+            content={
+              "Climb The Ladder That Leads You To Your Dream Job."
             }
           />
         </div>

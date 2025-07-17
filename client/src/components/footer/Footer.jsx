@@ -15,7 +15,7 @@ export default function Footer() {
       </div>
       <div className="h-[1px] bg-primary"></div>
       <p className="text-center md:text-base text-sm text-primary">
-        © 2024 Tron Academy. All Rights Reserved
+        © 2025 Tron Academy. All Rights Reserved
       </p>
     </footer>
   );

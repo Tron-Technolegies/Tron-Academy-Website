@@ -1,0 +1,141 @@
+.course_comparison_container {
+  padding: 2rem 0;
+  margin: 0;
+  width: 100%;
+  background-color: #f5f5f5;
+}
+
+.course_comparison_header {
+  width: 100%;
+  font-weight: 700;
+  font-size: 30px;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#dm_course_comparison {
+  color: #A157DC;
+}
+
+.course_comparisons {
+  display: flex;
+  margin-top: 3%;
+  gap: 2px;
+  width: 100%;
+}
+
+.ordinary_courses, .tron_dm {
+  width: 50%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.tron_dm {
+  border-left: 2px solid rgb(204, 92, 92);
+}
+
+.course_comparison_title {
+  height: 10vh;
+  background-color: #A157DC;
+  color: white;
+  font-weight: 700;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.course_content {
+  padding: 1.5rem;
+}
+
+.course_content ul {
+  list-style-type: disc;
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.section_label {
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.career_limitations {
+  color: #ff4d4d;
+}
+
+.exclusive_opportunities {
+  color: #28a745;
+  position: relative;
+  display: inline-block;
+}
+
+.exclusive_opportunities::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background-color: rgba(255, 255, 0, 0.5);
+  z-index: -1;
+}
+
+.limitation_list li::marker {
+  color: #ff4d4d;
+}
+
+.opportunity_list li::marker {
+  color: #28a745;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .course_comparison_header {
+    font-size: 24px;
+  }
+
+  .course_comparisons {
+    flex-direction: column;
+  }
+
+  .ordinary_courses, .tron_dm {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .tron_dm {
+    border-left: none;
+    border-top: 2px solid rgb(204, 92, 92);
+  }
+
+  .course_comparison_title {
+    height: auto;
+    min-height: 8vh;
+    font-size: 14px;
+    padding: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .course_comparison_header {
+    font-size: 20px;
+  }
+
+  .course_comparison_title {
+    font-size: 12px;
+    padding: 0.8rem;
+  }
+
+  .course_content {
+    padding: 1rem;
+  }
+
+  .course_content ul {
+    margin-left: 1rem;
+    font-size: 14px;
+  }
+}

@@ -15,3 +15,13 @@ export const handleEnquiryFormClick = ({ name, email, course, message }) => {
 
   window.open(whatsappUrl, "_blank");
 };
+
+/*Popup Form Enquiry Function*/
+export const popupFormEnquiry = ({ fullName, contactNumber, email, location, option }) => {
+  const phoneNumber = "+918330077882";
+  const messageContent = `I would like to enquire about the course. Please find my details below. :\nNAME: ${fullName}\nCONTACT NUMBER: ${contactNumber}\nEMAIL: ${email}\nLOCATION: ${location}\nCOURSE: ${option}`;
+  const encodedMessage = encodeURIComponent(messageContent);
+  const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+
+  window.open(whatsappUrl, "_blank");
+};
