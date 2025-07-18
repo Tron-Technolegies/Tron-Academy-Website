@@ -14,16 +14,25 @@ import testimonialsData from "../../utils/testimonials";
 import { useEffect } from "react";
 import CodingFaq from "../../components/coding/CodingFaq";
 import CodingCards from "../../components/coding/CodingCards";
+import { Helmet } from "react-helmet";
 
 const CodingPage = () => {
-   useEffect(() => {
-      window.scrollTo(0, 0);
-    }, []);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div>
+      <Helmet>
+        <tittle>Best Python Course in Kerala | Tron Academy Thrissur</tittle>
+        <meta
+          name="description"
+          content="Join Kerala’s top Python course at Tron Academy. Hands-on training in Python, Data Science & Web Development. Start your tech career with expert mentors today.
+"
+        />
+      </Helmet>
       <CodingHeader />
       <WhyChooseCoding />
-      <CodingCards/>
+      <CodingCards />
       <CodingCourseSchedule />
       {/* <Mentors
         mentors={mentorsData.codingMentors}
@@ -36,7 +45,7 @@ const CodingPage = () => {
       /> */}
       <BlogSection />
       <NextBatchSection />
-      <CodingFaq/>
+      <CodingFaq />
     </div>
   );
 };

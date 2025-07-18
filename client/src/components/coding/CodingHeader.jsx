@@ -9,7 +9,7 @@ const CodingHeader = () => {
         <div className="header_text">
           <h1>
             <span className='main_title_color'>Level Up Your Career </span> 
-            <br /> with the best coding course in kerala.
+            <br /> with the Best Python Course in Kerala.
           </h1>
           <p>
             At Tron Academy, we transform beginners into skilled coders and future-ready developers through hands-on experience training in Python, Data Science, Web Development, and more. Whether you dream of becoming a Python expert in Thrissur, a Data Scientist in Kerala, or a Web Developer, We don’t provide ordinary coding courses – we deliver industry domination programs.
