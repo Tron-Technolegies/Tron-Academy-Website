@@ -43,15 +43,15 @@ export default function App() {
           element: <AboutPage />,
         },
         {
-          path : "coding",
+          path : "coding-course-in-kerala",
           element : <CodingPage/>
         },
         {
-          path: "digitalmarketing",
+          path: "Best-Digital-Marketing-Course-In-Kerala",
           element : <DigitalmarketingPage/>
         },
         {
-          path : "multimedia",
+          path : "Graphic-design-Course-in-Kerala",
           element : <MultimediaPage/>
         }
       ],

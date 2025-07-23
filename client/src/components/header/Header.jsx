@@ -57,21 +57,21 @@ export default function Header() {
           {showCourseDropdown && (
             <div className="absolute top-full left-0 mt-2 bg-white shadow-md rounded-md py-2 w-40 z-50">
               <NavLink
-                to="/coding"
+                to="/coding-course-in-kerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base"
                 onClick={() => setShowCourseDropdown(false)}
               >
                 Coding
               </NavLink>
               <NavLink
-                to="/digitalmarketing"
+                to="/Best-Digital-Marketing-Course-In-Kerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base"
                 onClick={() => setShowCourseDropdown(false)}
               >
                 Digital Marketing
               </NavLink>
               <NavLink
-                to="/multimedia"
+                to="/Graphic-design-Course-in-Kerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base"
                 onClick={() => setShowCourseDropdown(false)}
               >

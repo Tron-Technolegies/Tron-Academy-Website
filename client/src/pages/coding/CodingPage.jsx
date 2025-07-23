@@ -29,6 +29,9 @@ const CodingPage = () => {
           content="Join Kerala’s top Python course at Tron Academy. Hands-on training in Python, Data Science & Web Development. Start your tech career with expert mentors today.
 "
         />
+         <link rel="canonical" href=" 
+ 	
+https://tronacademy.in/coding-course-in-kerala" />
       </Helmet>
       <CodingHeader />
       <WhyChooseCoding />

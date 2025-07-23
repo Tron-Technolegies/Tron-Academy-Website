@@ -36,6 +36,7 @@ export default function HomePage() {
           name="keywords"
           content="digital marketing academy, online digital marketing course, best online marketing courses, digital marketing course"
         />
+        <link rel="canonical" href="https://tronacademy.in/" />
       </Helmet>
       <LandingSection />
       <FindCourseSection />
