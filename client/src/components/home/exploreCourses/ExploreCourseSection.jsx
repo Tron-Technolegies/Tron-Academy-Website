@@ -13,8 +13,8 @@ export default function ExploreCourseSection() {
       title: "Advanced Digital Marketing",
       image: "/digital.jpg",
       bgColor: "bg-teal-600",
-      route: "/digitalmarketing",
-      duration: "4 months",
+      route: "/Best-Digital-Marketing-Course-In-Kerala",
+      duration: "5 months",
       startDate: "Sept 1, 2025",
       time: "10:30 am to 12:30pm",
     },
@@ -23,7 +23,7 @@ export default function ExploreCourseSection() {
       title: "Coding",
       image: "/coding.jpg",
       bgColor: "bg-blue-600",
-      route: "/coding",
+      route: "/coding-course-in-kerala",
       duration: "6 Months + 2 Months",
       startDate: "Sept 1, 2025",
       time: "2pm to 5pm",
@@ -33,7 +33,7 @@ export default function ExploreCourseSection() {
       title: "Multimedia",
       image: "/team/faheem.jpg",
       bgColor: "bg-purple-600",
-      route: "/multimedia",
+      route: "/Graphic-design-Course-in-Kerala",
       duration: "4 Months + 1 Month",
       startDate: "Sept 1, 2025",
       time: "11am to 2pm",
@@ -51,7 +51,7 @@ export default function ExploreCourseSection() {
         </h4>
         <div className="flex gap-3 items-center">
           <motion.button
-            onClick={() => navigate("/course")}
+            onClick={() => navigate("/Best-Digital-Marketing-Course-In-Kerala")}
             initial={{ scale: 1 }}
             whileHover={{ scale: 1.1, backgroundColor: "#CA90F2" }}
             whileTap={{ scale: 0.9 }}

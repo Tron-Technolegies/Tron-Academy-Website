@@ -25,6 +25,9 @@ and digital marketing techniques with expert training programs."
           name="keywords"
           content="Advanced seo smm course kerala, Digital marketing institute in chavakkad, Digital marketing training in Kerala"
         />
+         <link rel="canonical" href=" 
+ 	
+https://tronacademy.in/about" />
       </Helmet>
       <AboutHeader />
       <MissionSection />

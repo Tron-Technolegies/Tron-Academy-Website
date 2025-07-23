@@ -30,6 +30,9 @@ const DigitalmarketingPage = () => {
           name="description"
           content="Join the Best Digital Marketing Course in Kerala at Tron Academy! Learn SEO, Social media, paid ads & more with 90% practical training & placement guarantee."
         />
+         <link rel="canonical" href=" 
+ 	
+https://tronacademy.in/Best-Digital-Marketing-Course-In-Kerala" />
       </Helmet>
       <DigitalMarketingHeader />
       <WhyChooseUs />

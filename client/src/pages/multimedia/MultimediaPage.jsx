@@ -31,6 +31,9 @@ const MultimediaPage = () => {
           name="description"
           content="Join the best graphic design Course in Kerala. Learn Graphic Design, UI/UX, VFX with GCC certification and live projects. Transform your career today."
         />
+         <link rel="canonical" href=" 
+ 	
+https://tronacademy.in/Graphic-design-Course-in-Kerala" />
       </Helmet>
       <MultimediaHeader />
       <WhyChooseMultimedia />

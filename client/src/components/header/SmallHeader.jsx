@@ -45,7 +45,7 @@ export default function SmallHeader({ setSmallBar }) {
           {showCourseDropdown && (
             <div className="bg-white shadow-md rounded-md py-2 w-full z-50">
               <NavLink
-                to="/coding"
+                to="/codingcourseinkerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base border-b border-hoverPrimary"
                 onClick={() => {
                   setShowCourseDropdown(false);
@@ -55,7 +55,7 @@ export default function SmallHeader({ setSmallBar }) {
                 Coding
               </NavLink>
               <NavLink
-                to="/digitalmarketing"
+                to="/BestDigitalMarketingCourseInKerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base border-b border-hoverPrimary"
                 onClick={() => {
                   setShowCourseDropdown(false);
@@ -65,7 +65,7 @@ export default function SmallHeader({ setSmallBar }) {
                 Digital Marketing
               </NavLink>
               <NavLink
-                to="/multimedia"
+                to="/GraphicdesignCourseinKerala"
                 className="block px-4 py-2 hover:bg-gray-100 text-base border-b border-hoverPrimary"
                 onClick={() => {
                   setShowCourseDropdown(false);
